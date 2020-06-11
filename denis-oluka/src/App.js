@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import initFontAwesome from "./utils/initFontAwesome";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+initFontAwesome();
 
 export default class App extends React.Component {
   render() {

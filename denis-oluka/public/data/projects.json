@@ -1,0 +1,151 @@
+[
+  {
+    "name": "Muvi: The Muvi Guide",
+    "image": "images/muvi.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.premar.muvi",
+    "github": "https://github.com/OlukaDenis/Muvi",
+    "description": "Android mobile app that displays detailed information on movies and TV shows. App based on The Movie Database API.",
+    "tags": [
+      {
+        "name": "mobile"
+      },
+      {
+        "name": "java"
+      },
+      {
+        "name": "mobile"
+      },
+      {
+        "name": "retrofit"
+      }
+    ]
+  },
+
+  
+  {
+    "name": "Muvi Web Forum",
+    "image": "images/muvi-web.png",
+    "liveLink": "https://muvi-web-forum.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/Muvi-Web-Forum",
+    "description": "A web forum for the Muvi Android app with an intuitive UI design.",
+    "tags": [
+      {
+        "name": "web"
+      },
+      {
+        "name": "ruby"
+      },
+      {
+        "name": "sass"
+      },
+      {
+        "name": "rails"
+      },
+      {
+        "name": "html"
+      }
+    ]
+  },
+  
+  {
+    "name": "Orgapp Tracker",
+    "image": "images/orgapp.png",
+    "liveLink": "https://orgapp-tracker.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/Project--Tracker",
+    "description": "A web app that allows users to track the time spent on projects and grouping them.",
+    "tags": [
+      {
+        "name": "web"
+      },
+      {
+        "name": "ruby"
+      },
+      {
+        "name": "sass"
+      },
+      {
+        "name": "rails"
+      },
+      {
+        "name": "html"
+      }
+    ]
+  },
+
+
+  {
+    "name": "Todo App",
+    "image": "images/todo.png",
+    "liveLink": "https://todo-js-dj.netlify.app",
+    "github": "https://github.com/OlukaDenis/todo-list-javascript",
+    "description": "A web app for scheduling and completing your daily tasks.",
+    "tags": [
+      {
+        "name": "web"
+      },
+      {
+        "name": "Javascript"
+      },
+      {
+        "name": "NodeJs"
+      },
+      {
+        "name": "Babel"
+      },
+      {
+        "name": "Webpack"
+      }
+    ]
+  },
+
+  {
+    "name": "Friendy",
+    "image": "images/friendy.png",
+    "liveLink": "https://friendy-social.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/Muvi-Web-Forum",
+    "description": "A web social platform that allows user to post their stories, send and receive friend requests, and comment on stories.",
+    "tags": [
+      {
+        "name": "web"
+      },
+      {
+        "name": "ruby"
+      },
+      {
+        "name": "sass"
+      },
+      {
+        "name": "rails"
+      },
+      {
+        "name": "html"
+      }
+    ]
+  },
+
+  {
+    "name": "Restaurant Page",
+    "image": "images/restaurant.png",
+    "liveLink": "https://dennys.netlify.app",
+    "github": "https://github.com/OlukaDenis/restaurant-page",
+    "description": "A restaurant page which allows user to view the menu and contact for orders.",
+    "tags": [
+      {
+        "name": "web"
+      },
+      {
+        "name": "Javascript"
+      },
+      {
+        "name": "NodeJs"
+      },
+      {
+        "name": "Babel"
+      },
+      {
+        "name": "Webpack"
+      }
+    ]
+  }
+  
+]
