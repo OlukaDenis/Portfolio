@@ -8,7 +8,7 @@ import '../App.scss';
 export default function AboutLayout() {
 
   return (
-      <section className="about-section text-center">
+      <section id="about" className="about-section text-center">
         <Container>
           <Row>
             <Col>

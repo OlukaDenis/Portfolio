@@ -22,7 +22,7 @@ export default class ProjectsLayout extends Component {
 
 	render() {
 		return(
-		<>
+		<div id="projects">
 			<div className="hero-wrap" >
 					<div className="d-flex justify-content-center align-items-center" >
 						<div className="col-md-8 text text-center">
@@ -105,7 +105,7 @@ export default class ProjectsLayout extends Component {
 						</Row>
 				</Container>
 				</footer>
-		</>
+		</div>
 		);
 	}
 }
