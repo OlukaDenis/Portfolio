@@ -38,20 +38,20 @@ export default class ProjectsLayout extends Component {
 								{
 									this.state.data.map(element => (
 										
-											<Col md={6}>
+											<Col key={element.id} md={6}>
 											<div className="blog-entry">
 												<div className="img img-2" style={{backgroundColor: '#eee'}}>
 													<div className="detail-overlay">
 														<ul>
 															<li>
-																<Link to={element.liveLink} rel="noopener" target="_blank">
+																<a href={element.liveLink} rel="noopener" target="_blank">
 																	<FontAwesomeIcon icon={faEye}/>
-																</Link>
+																</a>
 															</li>
 															<li>
-																<Link to={element.github} rel="noopener" target="_blank">
+																<a href={element.github} rel="noopener" target="_blank">
 																	<FontAwesomeIcon icon={faCode}/>
-																</Link>
+																</a>
 															</li>
 														</ul>
 													</div>
@@ -61,8 +61,8 @@ export default class ProjectsLayout extends Component {
 												<div className="text text-2 pt-2 mt-3">
 													<div className="category">
 													{
-														element.tags.map((tag, index) => (
-															<span>{tag.name}</span>
+														element.tags.map((tag) => (
+															<span key={tag.id}>{tag.name}</span>
 														))
 													}
 													</div>													

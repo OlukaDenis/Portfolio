@@ -1,4 +1,4 @@
-const JsonObject = (json) => {
+const JsonObject = json => {
   const { name } = json.name;
   const { image } = json.image;
   const { liveLink } = json.liveLink;
@@ -6,7 +6,7 @@ const JsonObject = (json) => {
   return {
     name,
     image,
-    liveLink
+    liveLink,
   };
 };
 

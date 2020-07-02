@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Muvi: The Muvi Guide",
     "image": "images/muvi.png",
     "liveLink": "https://play.google.com/store/apps/details?id=com.premar.muvi",
@@ -7,22 +8,31 @@
     "description": "Android mobile app that displays detailed information on movies and TV shows. App based on The Movie Database API.",
     "tags": [
       {
-        "name": "mobile"
+        "id": 110,
+        "name": "web"
       },
       {
-        "name": "java"
+        "id": 111,
+        "name": "Javascript"
       },
       {
-        "name": "mobile"
+        "id": 112,
+        "name": "NodeJs"
       },
       {
-        "name": "retrofit"
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
       }
     ]
   },
 
   
   {
+    "id": 2,
     "name": "Muvi Web Forum",
     "image": "images/muvi-web.png",
     "liveLink": "https://muvi-web-forum.herokuapp.com/",
@@ -30,24 +40,30 @@
     "description": "A web forum for the Muvi Android app with an intuitive UI design.",
     "tags": [
       {
+        "id": 110,
         "name": "web"
       },
       {
-        "name": "ruby"
+        "id": 111,
+        "name": "Javascript"
       },
       {
-        "name": "sass"
+        "id": 112,
+        "name": "NodeJs"
       },
       {
-        "name": "rails"
+        "id": 113,
+        "name": "Babel"
       },
       {
-        "name": "html"
+        "id": 114,
+        "name": "Webpack"
       }
     ]
   },
   
   {
+    "id": 3,
     "name": "Orgapp Tracker",
     "image": "images/orgapp.png",
     "liveLink": "https://orgapp-tracker.herokuapp.com/",
@@ -55,25 +71,31 @@
     "description": "A web app that allows users to track the time spent on projects and grouping them.",
     "tags": [
       {
+        "id": 110,
         "name": "web"
       },
       {
-        "name": "ruby"
+        "id": 111,
+        "name": "Javascript"
       },
       {
-        "name": "sass"
+        "id": 112,
+        "name": "NodeJs"
       },
       {
-        "name": "rails"
+        "id": 113,
+        "name": "Babel"
       },
       {
-        "name": "html"
+        "id": 114,
+        "name": "Webpack"
       }
     ]
   },
 
 
   {
+    "id": 4,
     "name": "Todo App",
     "image": "images/todo.png",
     "liveLink": "https://todo-js-dj.netlify.app",
@@ -81,24 +103,30 @@
     "description": "A web app for scheduling and completing your daily tasks.",
     "tags": [
       {
+        "id": 110,
         "name": "web"
       },
       {
+        "id": 111,
         "name": "Javascript"
       },
       {
+        "id": 112,
         "name": "NodeJs"
       },
       {
+        "id": 113,
         "name": "Babel"
       },
       {
+        "id": 114,
         "name": "Webpack"
       }
     ]
   },
 
   {
+    "id": 5,
     "name": "Friendy",
     "image": "images/friendy.png",
     "liveLink": "https://friendy-social.herokuapp.com/",
@@ -106,24 +134,30 @@
     "description": "A web social platform that allows user to post their stories, send and receive friend requests, and comment on stories.",
     "tags": [
       {
+        "id": 110,
         "name": "web"
       },
       {
-        "name": "ruby"
+        "id": 111,
+        "name": "Javascript"
       },
       {
-        "name": "sass"
+        "id": 112,
+        "name": "NodeJs"
       },
       {
-        "name": "rails"
+        "id": 113,
+        "name": "Babel"
       },
       {
-        "name": "html"
+        "id": 114,
+        "name": "Webpack"
       }
     ]
   },
 
   {
+    "id": 6,
     "name": "Restaurant Page",
     "image": "images/restaurant.png",
     "liveLink": "https://dennys.netlify.app",
@@ -131,18 +165,23 @@
     "description": "A restaurant page which allows user to view the menu and contact for orders.",
     "tags": [
       {
+        "id": 110,
         "name": "web"
       },
       {
+        "id": 111,
         "name": "Javascript"
       },
       {
+        "id": 112,
         "name": "NodeJs"
       },
       {
+        "id": 113,
         "name": "Babel"
       },
       {
+        "id": 114,
         "name": "Webpack"
       }
     ]

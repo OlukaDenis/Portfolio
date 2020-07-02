@@ -7,19 +7,19 @@ import {
   faTwitterSquare,
   faSkype,
   faAngellist,
-  faStackOverflow
+  faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
 
 function initFontAwesome() {
-    library.add(
-      fab,
-      faTwitterSquare,
-      faSkype,
-      faAngellist,
-      faStackOverflow,
-      faFacebook,
-      faLinkedin,
-      faGithub
-    );
+  library.add(
+    fab,
+    faTwitterSquare,
+    faSkype,
+    faAngellist,
+    faStackOverflow,
+    faFacebook,
+    faLinkedin,
+    faGithub,
+  );
 }
 export default initFontAwesome;
