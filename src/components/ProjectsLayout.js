@@ -27,7 +27,7 @@ export default class ProjectsLayout extends Component {
 					<div className="d-flex justify-content-center align-items-center" >
 						<div className="col-md-8 text text-center">
 							<div className="desc">
-								<h1 className="mb-4">My Projects</h1>
+								<h1 className="heading-title">Projects</h1>
 							</div>
 						</div>
 					</div>
@@ -38,7 +38,7 @@ export default class ProjectsLayout extends Component {
 								{
 									this.state.data.map(element => (
 										
-											<Col key={element.id} md={6}>
+											<Col key={element.id} md={6} lg={6} sm={10}>
 											<div className="blog-entry">
 												<div className="img img-2" style={{backgroundColor: '#eee'}}>
 													<div className="detail-overlay">

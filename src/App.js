@@ -7,8 +7,9 @@ import {
   NavLink,
   HashRouter
 } from 'react-router-dom';
-import About from './pages/About';
-import Projects from './pages/Projects';
+import AboutLayout from './components/AboutLayout';
+import ProjectsLayout from './components/ProjectsLayout';
+import SkillsLayout from './components/SkillsLayout';
 import NavBar from './components/NavBar';
 import initFontAwesome from './utils/initFontAwesome';
 
@@ -36,7 +37,8 @@ export default class App extends React.Component {
               <ul>
                 <li><NavLink exact to="/" className="nav-link"> About </NavLink></li>
                 <li><NavLink to="/projects" className="nav-link"> Projects </NavLink></li>
-                <li><NavLink to="/contact" className="nav-link"> Contact </NavLink></li>
+                <li><NavLink to="/skills" className="nav-link"> Skills </NavLink></li>
+                <li><NavLink to="/blog" className="nav-link"> Blog </NavLink></li>
               </ul>
             </nav>
 
@@ -97,8 +99,9 @@ export default class App extends React.Component {
           </aside>
 
           <div id="colorlib-main">
-            <Route exact path="/" component={About} />
-            <Route path="/projects" component={Projects} />
+            <Route exact path="/" component={AboutLayout} />
+            <Route path="/projects" component={ProjectsLayout} />
+            <Route path="/skills" component={SkillsLayout} />
         </div>
 
         </div>

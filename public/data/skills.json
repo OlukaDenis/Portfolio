@@ -1,0 +1,122 @@
+[
+  {
+    "id": 3001,
+    "title": "Frontend Technologies",
+    "skills": [
+      {
+        "id": 1,
+        "name": "ReactJs",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+      },
+
+      {
+        "id": 2,
+        "name": "Bootstrap",
+        "image": "https://obscureproblemsandgotchas.com/wp-content/uploads/2018/06/bootstrap-stack-e1530246058846.png"
+      },
+      {
+        "id": 3,
+        "name": "NextJs",
+        "image": "https://spectrum.imgix.net/communities/613a8d4f-ac27-41d4-a9dc-054b2e34893d/next-white.png.0.731330725584979?w=256&h=256&dpr=2&auto=compress&expires=1551916800000&ixlib=js-1.2.0&s=ec7ac6ae076415cb17f07fa8b02a3529"
+      },
+      {
+        "id": 4,
+        "name": "JavaScript",
+        "image": "https://cdn.worldvectorlogo.com/logos/javascript.svg"
+      },
+      {
+        "id": 5,
+        "name": "WordPress",
+        "image": "https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/wordpress-512.png"
+      }
+    ]
+  },
+
+  {
+    "id": 3002,
+    "title": "Backend Technologies",
+    "skills": [
+      {
+        "id": 1,
+        "name": "Ruby on Rails",
+        "image": "https://www.fullstacklabs.co/img/referral/Technologies/tech_rubyonrails.png"
+      },
+      {
+        "id": 2,
+        "name": "NodeJS",
+        "image": "https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"
+      },
+      {
+        "id": 3,
+        "name": "GraphQL",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png"
+      }
+    ]
+  },
+
+  {
+    "id": 3003,
+    "title": "Mobile Development",
+    "skills": [
+      {
+        "id": 1,
+        "name": "Java",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"
+      },
+      {
+        "id": 2,
+        "name": "Kotlin",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin-logo.svg/1200px-Kotlin-logo.svg.png"
+      },
+      {
+        "id": 3,
+        "name": "React Native",
+        "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--LS4X9NFz--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png"
+      }
+    ]
+  },
+
+  {
+    "id": 3004,
+    "title": "Styling",
+    "skills": [
+      {
+        "id": 1,
+        "name": "CSS",
+        "image": "https://cdn.iconscout.com/icon/free/png-256/css-38-226095.png"
+      },
+      {
+        "id": 2,
+        "name": "SASS",
+        "image": "https://miro.medium.com/max/4000/1*c-JIliiaSfM2X69m-uwvZQ.png"
+      },
+      {
+        "id": 3,
+        "name": "LESS",
+        "image": "https://lh3.googleusercontent.com/proxy/gOer8ILnNkXkHN5PnWRXchqJP75VP1ZkbrfZMIV_w76TVZmvQYrTozvjUd4Te_viGlhDa7uf7yFeIQm29vQbpBJqmg"
+      }
+    ]
+  },
+
+  {
+    "id": 3005,
+    "title": "Databases",
+    "skills": [
+      {
+        "id": 1,
+        "name": "MySQL",
+        "image": "https://cdn4.iconfinder.com/data/icons/logos-3/181/MySQL-512.png"
+      },
+      {
+        "id": 2,
+        "name": "Postgres",
+        "image": "https://cdn.iconscout.com/icon/free/png-512/postgresql-226047.png"
+      },
+      {
+        "id": 3,
+        "name": "Firebase Realtime Database",
+        "image": "https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png"
+      }
+    ]
+  }
+]
