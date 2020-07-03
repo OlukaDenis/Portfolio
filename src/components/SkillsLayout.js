@@ -34,7 +34,7 @@ export default class SkillsLayout extends Component {
                       <div className="skill-list">
                         {
                           skill.skills.map(ele => (
-                            <div className="skill">
+                            <div className="text-center skill">
                               {/* <div  key={ele.id} style={{ backgroundImage: `url(${ele.image})` }}/> */}
                               <img src={ele.image} alt={ele.name} />
                               <p>{ele.name}</p>
