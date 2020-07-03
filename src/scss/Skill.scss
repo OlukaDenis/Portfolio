@@ -16,18 +16,30 @@
   .skill-list {
     font-family: $font-primary;
     display: grid;
-    // grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
-    // grid-gap: 10px 10px;
-    gap: 20px;
-    grid-auto-flow: column;
+    grid-gap: 20px;
+    // grid-auto-flow: column;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     padding-top: 10px;
+
+    // @include media-breakpoint-down(sm){
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
+
+    @include media-breakpoint-down(md){
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     .skill {
       padding: 10px;
 
       img {
         height: 100px;
+        align-self: center;
+
+        @include media-breakpoint-down(sm){
+          height: 60px;
+        }
       }
 
       p {

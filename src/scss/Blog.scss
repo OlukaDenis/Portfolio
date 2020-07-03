@@ -1,0 +1,47 @@
+@import 'variables.scss';
+
+.blog-item {
+  background-color: $background-2;
+  margin-bottom: 30px;
+  border-radius: 10px;
+
+  a {
+    color: $white;
+    font-size: 1.5rem;
+  }
+
+
+  .blog-image {
+    height: 300px; 
+    border-radius: 10px 0 0 10px; 
+    @include media-breakpoint-down(md){
+    border-radius: 10px 10px 0 0; 
+    }
+  }
+
+  .blog-info {
+    padding: 10px 30px;
+
+    .blog-desc {
+      color: $whitish;
+      text-align: justify;
+      font-family: $font-primary;
+      font-size: 0.9rem;
+      padding-top: 10px;
+    }
+
+    .blog-meta {
+      p {
+        color: $grayish;
+        text-transform: uppercase;
+        font-weight: lighter;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+.link-btn {
+  border-radius: 50%;
+  padding: 5px 16px;
+}

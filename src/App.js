@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.scss';
 import {
-  BrowserRouter as Router,
-  Switch,
   Route,
   NavLink,
-  HashRouter
+  HashRouter,
 } from 'react-router-dom';
 import AboutLayout from './components/AboutLayout';
 import ProjectsLayout from './components/ProjectsLayout';
 import SkillsLayout from './components/SkillsLayout';
+import BlogLayout from './components/BlogLayout';
 import NavBar from './components/NavBar';
 import initFontAwesome from './utils/initFontAwesome';
 
@@ -102,6 +101,7 @@ export default class App extends React.Component {
             <Route exact path="/" component={AboutLayout} />
             <Route path="/projects" component={ProjectsLayout} />
             <Route path="/skills" component={SkillsLayout} />
+            <Route path="/blog" component={BlogLayout} />
         </div>
 
         </div>
