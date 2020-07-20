@@ -28,7 +28,7 @@ export default class SkillsLayout extends Component {
 						<Row>
               {
                 data.map(skill => (
-                  <Col key={skill.id} md={10} lg={12} sm={10}>
+                  <Col key={skill.id} md={12} lg={12} sm={12}>
                     <div className="skill-item">
                       <h2>{skill.title}</h2>
                       <div className="skill-list">
