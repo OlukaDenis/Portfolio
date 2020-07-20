@@ -61,7 +61,24 @@ const RightNav = ({ open, handleClick }) => {
         <li onClick={handleClick}><NavLink to="/projects" className="nav-link"> Projects </NavLink></li>
         <li onClick={handleClick}><NavLink to="/skills" className="nav-link"> Skills </NavLink></li>
         <li onClick={handleClick}><NavLink to="/blog" className="nav-link"> Blog </NavLink></li>
-        <li onClick={handleClick}><NavLink to="/resume" className="btn btn-primary resume-btn"> Resume </NavLink></li>
+        <li onClick={handleClick}>
+          <a 
+            href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing" 
+            className="btn btn-primary resume-btn"
+            target="_blank"
+            rel="noopener noreferrer"> 
+            Resume 
+          </a>
+        </li>
+        <li onClick={handleClick}>
+          <a href="mailto:olukadeno@gmail.com" 
+            className="btn btn-primary resume-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          > 
+            Hire Me 
+            </a>
+        </li>
       </Ul>
     </HashRouter>
   )

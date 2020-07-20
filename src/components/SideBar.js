@@ -32,13 +32,11 @@ export default function SideBar() {
           role="complementary"
           className="js-fullheight text-center"
         >
-          <h1 id="colorlib-logo">
+          <div id="colorlib-logo">
             <NavLink to="/">
-              <span />
-                Denis 
-              <span> </span>
+              <img src="images/logo.png" alt="Denny Logo" />
             </NavLink>
-          </h1>
+          </div>
           <nav id="colorlib-main-menu" role="navigation">
             <ul>
               <li><NavLink exact to="/" className="nav-link"> About </NavLink></li>
@@ -49,10 +47,17 @@ export default function SideBar() {
           </nav>
 
           <div id="resume-button">
-            <NavLink to="/resume" className="btn btn-primary"> Resume </NavLink>
+            <a href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing" 
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"> Resume </a>
           </div>
           <div id="hire-button">
-            <a className="btn btn-primary" href="mailto:olukadeno@gmail.com" target="_blank">Hire Me</a>
+            <a 
+            className="btn btn-primary" 
+            href="mailto:olukadeno@gmail.com" 
+            target="_blank"
+            rel="noopener noreferrer">Hire Me</a>
           </div>
         </aside>
       </div>
