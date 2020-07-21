@@ -12,7 +12,7 @@ const Footer = () => (
       <Row>
         <div className="col-md-12">
           <div className="ftco-footer-widget">
-            <h2 className="ftco-heading-2">Hire Me</h2>
+            <h2 className="ftco-heading-2">Let's Connect</h2>
             <div className="block-23 mb-3">
               <p>
                 {' '}
@@ -43,11 +43,50 @@ const Footer = () => (
         </div>
       </Row>
       <Row>
-        <Col md={24} className=" copyright text-center">
+        <Col className=" copyright text-center">
           <hr />
-          Copyright | Denis &copy;
-          {' '}
-          <span>{(new Date().getFullYear())}</span>
+
+          <div className="social-icons">
+            <ul className="text-center">
+              <li>
+                <a href="https://www.facebook.com/dennylucaz" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'facebook']} />
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/dennylucaz" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'twitter']} />
+                </a>
+              </li>
+              <li>
+                <a href="https://angel.co/u/denis-oluka" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'angellist']} />
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/denis-oluka" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/OlukaDenis" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'github']} />
+                </a>
+              </li>
+              <li>
+                <a to="skype:deniz.lucaz" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={['fab', 'skype']} />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            Copyright | Denis &copy;
+            {' '}
+            <span>{(new Date().getFullYear())}</span>
+          </p>
+
         </Col>
       </Row>
     </Container>

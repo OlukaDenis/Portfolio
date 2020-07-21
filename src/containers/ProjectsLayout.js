@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
-import '../App.scss';
+import '../scss/Project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faEye, faEnvelope, faMapMarkerAlt, faPhone} from '@fortawesome/free-solid-svg-icons'
 import { Container, Row, Col} from 'react-bootstrap';

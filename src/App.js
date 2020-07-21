@@ -4,13 +4,11 @@ import {
   Route,
   HashRouter,
 } from 'react-router-dom';
-import { BreakpointProvider, Breakpoint } from 'react-socks';
 import AboutLayout from './containers/AboutLayout';
 import ProjectsLayout from './containers/ProjectsLayout';
 import SkillsLayout from './containers/SkillsLayout';
 import BlogLayout from './containers/BlogLayout';
 import SideBar from './components/SideBar';
-import NavBar from './components/navbar/Navbar';
 import initFontAwesome from './utils/initFontAwesome';
 
 initFontAwesome();

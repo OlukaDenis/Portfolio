@@ -16,15 +16,6 @@
 			font-weight: 700;
 			letter-spacing: 1px;
 		}
-		ul{
-			li{
-				a{
-					span{
-						color: $white;
-					}
-				}
-			}
-		}
 		.btn-primary{
 			background: $white !important;
 			border: 2px solid $white !important;
@@ -64,6 +55,30 @@
 
 	.copyright {
 		color: rgba($white, .5);
+		width: 100%;
+
+		hr {
+			background-color: #555;
+		}
+
+		p {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 0 auto;
+		}
+
+		.social-icons {
+			
+			ul {
+				margin-top: 1.5rem;
+				list-style-type: none;
+				padding: 0;
+				li {
+					display: inline-block;
+					padding: 10px;
+				}
+			}
+		}
 	}
 }
 
