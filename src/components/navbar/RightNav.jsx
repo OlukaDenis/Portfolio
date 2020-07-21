@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import '../../scss/NavBar.scss';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   NavLink,
   HashRouter,
 } from 'react-router-dom';
