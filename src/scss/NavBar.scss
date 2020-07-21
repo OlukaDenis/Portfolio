@@ -116,6 +116,18 @@
 		}
 	}
 
+	#resume-button {
+		.btn {
+			border: 1px solid $primary;
+			background-color: rgba(255, 255, 255, 0);
+			color: $primary;
+			&:hover{
+				background-color: $primary;
+				color: white;
+			}
+		}
+	}
+
 	#hire-button {
 		padding-top: 50px;
 	}
