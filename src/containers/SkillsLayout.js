@@ -4,22 +4,26 @@ import '../App.scss';
 import { Container, Row, Col} from 'react-bootstrap';
 import '../scss/Skill.scss';
 import Footer from '../components/footer';
+import Loading from '../components/loading';
 
 export default class SkillsLayout extends Component {
 	
 	state = { 
 		data: [],
-		error: '',
+    error: '',
+    loading: true,
 	};
 
 	async componentDidMount() {
 		const response = await fetch('data/skills.json');
 		const res = response.json();
-		res.then(result =>	this.setState({data: result}))
+    res
+      .then(result =>	this.setState({data: result, loading: false}))
+      .catch(err => this.setState({error: err, loading: false}));
   }
   
   render() {
-    const { data } = this.state;
+    const { data, loading, error } = this.state;
     return (
       <div>
         <section className="ftco-section">
@@ -27,6 +31,7 @@ export default class SkillsLayout extends Component {
 					<Container>
 						<Row>
               {
+                loading ? <Loading /> :
                 data.map(skill => (
                   <Col key={skill.id} md={12} lg={12} sm={12}>
                     <div className="skill-item">

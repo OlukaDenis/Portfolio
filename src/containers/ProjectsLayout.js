@@ -6,23 +6,31 @@ import { faCode, faEye, faEnvelope, faMapMarkerAlt, faPhone} from '@fortawesome/
 import { Container, Row, Col} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Footer from '../components/footer';
+import Loading from '../components/loading';
 
 class ProjectsLayout extends Component {
 	
 	state = { 
 		data: [],
 		error: '',
-		loading: false,
+		loading: true,
 	};
 
 	async componentDidMount() {
 		const response = await fetch('data/projects.json');
 		const res = response.json();
-		res.then(result =>	this.setState({data: result}))
+		res
+		.then(result =>	{
+			this.setState({data: result, loading: false})
+		})
+		.catch(err => {
+			this.setState({error: err, loading: false})
+		});
 	}
 
 
 	render() {
+		const { data, loading, error } = this.state;
 		return(
 		<div id="projects">
 			<div className="hero-wrap" >
@@ -38,7 +46,8 @@ class ProjectsLayout extends Component {
 					<Container>
 						<Row>
 								{
-									this.state.data.map(element => (
+									loading ? <Loading /> :
+									data.map(element => (
 										
 											<Col key={element.id} md={6} lg={6} sm={10}>
 											<div className="blog-entry">

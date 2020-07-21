@@ -6,22 +6,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import '../scss/Blog.scss';
 import Footer from '../components/footer';
+import Loading from '../components/loading';
 
 export default class BlogLayout extends Component {
 	
 	state = { 
 		data: [],
-		error: '',
+    error: '',
+    loading: true,
 	};
 
 	async componentDidMount() {
 		const response = await fetch('data/blogs.json');
 		const res = response.json();
-		res.then(result =>	this.setState({data: result}))
+    res
+      .then(result =>	this.setState({data: result, loading: false}))
+      .catch(err => this.setState({error: err, loading: false}));
   }
   
   render() {
-    const { data } = this.state;
+    const { data, loading, error } = this.state;
     return (
       <div>
       <section className="ftco-section">
@@ -29,6 +33,7 @@ export default class BlogLayout extends Component {
 					<Container>
 						<Row>
               {
+                loading ? <Loading /> :
                 data.map(blog => (
                   <Col key={blog.id} md={10} lg={12} sm={10}>
                     <div className="blog-item d-flex flex-column flex-lg-row">
