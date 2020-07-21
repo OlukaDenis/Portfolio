@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import '../App.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faEye, faEnvelope, faMapMarkerAlt, faPhone} from '@fortawesome/free-solid-svg-icons'
 import { Container, Row, Col} from 'react-bootstrap';
 import '../scss/Skill.scss';
+import Footer from '../components/footer';
 
 export default class SkillsLayout extends Component {
 	
@@ -22,7 +21,8 @@ export default class SkillsLayout extends Component {
   render() {
     const { data } = this.state;
     return (
-      <section className="ftco-section">
+      <div>
+        <section className="ftco-section">
         	<h1 className="heading-title">Skills</h1>
 					<Container>
 						<Row>
@@ -49,6 +49,8 @@ export default class SkillsLayout extends Component {
             </Row>
           </Container>
         </section>
+        <Footer />
+      </div>
     );
   }
 }

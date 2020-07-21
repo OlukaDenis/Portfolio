@@ -8,32 +8,13 @@
   align-items: center;
   border-bottom: 1px solid $grayish;
 
-  .menu-bars {
-    width: 20%;
-    text-align: center;
-    color: $white;
-    font-size: 40px;
-    cursor: pointer;
-  }
-
   h2 {
     width: 80%;
     text-align: center;
   }
 }
 
-
 .side-bar-menu {
-  text-align: center;
-  color: black;
-  font-size: 40px;
-  display: inline;
-  position: absolute;
-  z-index: 1500;
-  top: 5px;
-  left: 20px;
-  cursor: pointer;
-
   @include media-breakpoint-up(lg){
 		display: none;
 	}
@@ -46,7 +27,7 @@
 	padding-right: 3em;
 	text-align: center;
 	width: 25%;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	top: 0;
 	left: 0;	
@@ -54,7 +35,14 @@
 	z-index: 1001;
 	background: repeating-linear-gradient( -120deg, rgb(224, 224, 224) 5px, rgb(255, 255, 255) 8px, rgb(214, 213, 213) 5px, rgb(241, 241, 241) 6px);
 	@include transition(.5s);
-	
+	@include media-breakpoint-up(lg){
+		width: 25%;
+	}
+	@include media-breakpoint-down(md){
+		width: 270px;
+		@include translateX(-270px);
+		padding-top: 2em;
+	}
 	#colorlib-logo {
 		margin-bottom: 2.5em;
 		display: block;
@@ -64,16 +52,13 @@
 		@include media-breakpoint-down(md){
 			margin-bottom: 20px;
 		}
-		a{
-			display: inline-block;
-			text-align: center;
-			color: $black;
-			span{
-				color: lighten($black,80%);
-			}
+		
+		img {
+			height: 100px;
+			width: 100px;
 		}
 	}
-	#sidebar {
+	#colorlib-main-menu {
 		ul {
 			margin: 0;
 			padding: 0;
@@ -130,5 +115,38 @@
 
 	#hire-button {
 		padding-top: 50px;
+	}
+
+	.colorlib-footer {
+		position: absolute;
+		bottom: 40px;
+		right: 1.5em;
+		left: 1.5em;
+		font-size: 14px;
+		font-weight: 400;
+		color: rgba(0,0,0,.6);
+		padding: 0 20px;
+		span {
+			display: block;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				padding: 0;
+				margin: 0;
+				display: inline;
+				list-style: none;
+				a {
+					color: rgba(0,0,0,.7);
+					padding: 4px;
+					&:hover, &:active, &:focus {
+						text-decoration: none;
+						outline: none;
+						color: $primary;
+					}
+				}
+			}
+		}
 	}
 }

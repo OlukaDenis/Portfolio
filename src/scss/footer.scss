@@ -1,0 +1,82 @@
+@import 'variables.scss';
+
+.ftco-footer {
+	font-size: 14px;
+	background: #132238;
+	padding: 6em 0;;
+	.ftco-footer-logo {
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+	.ftco-footer-widget {
+		h2 {
+			color: $white;
+			margin-bottom: 40px;
+			font-size: 17px;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+		ul{
+			li{
+				a{
+					span{
+						color: $white;
+					}
+				}
+			}
+		}
+		.btn-primary{
+			background: $white !important;
+			border: 2px solid $white !important;
+			&:hover{
+				background: $white;
+				border: 2px solid $white !important;
+			}
+		}
+	}
+	p {
+		color: rgba($white, .5);
+	}
+	a {
+		color: rgba($white, .5);
+		&:hover {
+			color: $white;
+		}
+	}
+	.ftco-heading-2 {
+		font-size: 17px;
+		font-weight: 400;
+		color: $black;
+	}
+
+	.categories{
+		li{
+			border-bottom: 1px solid rgba(255,255,255,.1);
+			padding: 10px 0;
+			a{
+				color: rgba(255,255,255,.5) !important;
+				span{
+					color: rgba(255,255,255,.8) !important;
+				}
+			}
+		}
+	}
+
+	.copyright {
+		color: rgba($white, .5);
+	}
+}
+
+
+
+.footer-small-nav {
+	> li {
+		display: inline-block;
+		a {
+			margin: 0 10px 10px 0;
+			&:hover, &:focus {
+				color: $primary;
+			}
+		}
+	}
+}

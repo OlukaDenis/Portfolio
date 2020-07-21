@@ -5,6 +5,7 @@ import { Container, Row, Col} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import '../scss/Blog.scss';
+import Footer from '../components/footer';
 
 export default class BlogLayout extends Component {
 	
@@ -22,6 +23,7 @@ export default class BlogLayout extends Component {
   render() {
     const { data } = this.state;
     return (
+      <div>
       <section className="ftco-section">
         	<h1 className="heading-title">Blog</h1>
 					<Container>
@@ -62,6 +64,8 @@ export default class BlogLayout extends Component {
             </Row>
           </Container>
         </section>
+        <Footer />
+      </div>
     );
   }
 }
