@@ -46,7 +46,7 @@ export default function AboutLayout() {
                     </a>
                   </li>
                   <li>
-                    <a to="skype:deniz.lucaz" target="_blank" rel="noopener noreferrer">
+                    <a href="skype:deniz.lucaz" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={['fab', 'skype']} />
                     </a>
                   </li>
