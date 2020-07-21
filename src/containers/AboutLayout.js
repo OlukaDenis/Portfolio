@@ -2,7 +2,7 @@ import React from 'react';
 import 'antd/dist/antd.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col } from 'react-bootstrap';
-import '../App.scss';
+import '../scss/About.scss';
 
 export default function AboutLayout() {
   return (
