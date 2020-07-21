@@ -270,7 +270,7 @@ h1, h2, h3, h4, h5,
 	padding: 40px 0;
 	text-align: center;
 
-	@include media-breakpoint-down(sm){
+	@include media-breakpoint-down(md){
 	padding-top: 100px;
 	}
 }
@@ -655,7 +655,7 @@ h1, h2, h3, h4, h5,
 		width: 100%;
 		overflow-y: scroll;
 
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(md){
 			padding-top: 100px;
 		}
 }
