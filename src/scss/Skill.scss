@@ -1,0 +1,52 @@
+@import 'variables.scss';
+
+.skill-item {
+    background-color: $background-2;
+    box-shadow: 0 0 36px rgba(1, 15, 29, 0.616);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 30px 10px;
+
+    h2 {
+      text-align: center;
+      color: $white;
+      border-bottom: 1px solid $background;
+    }
+
+  .skill-list {
+    font-family: $font-primary;
+    display: grid;
+    grid-gap: 20px;
+    // grid-auto-flow: column;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    padding-top: 10px;
+
+    // @include media-breakpoint-down(sm){
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
+
+    @include media-breakpoint-down(md){
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill {
+      padding: 10px;
+
+      img {
+        height: 100px;
+        align-self: center;
+
+        @include media-breakpoint-down(sm){
+          height: 60px;
+        }
+      }
+
+      p {
+        color: $whitish;
+        text-align: center;
+        padding-top: 4px;
+      }
+    }
+  }
+}

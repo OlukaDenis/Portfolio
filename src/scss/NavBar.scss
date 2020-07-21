@@ -1,0 +1,155 @@
+@import 'variables.scss';
+
+.top-navbar {
+  background-color: $background;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid $grayish;
+
+  h2 {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+.side-bar-menu {
+  @include media-breakpoint-up(lg){
+		display: none;
+	}
+}
+
+#colorlib-aside {
+	padding-top: 3em;
+	padding-bottom: 40px;
+	padding-left: 3em;
+	padding-right: 3em;
+	text-align: center;
+	width: 25%;
+	position: fixed;
+	bottom: 0;
+	top: 0;
+	left: 0;	
+	overflow-y: hidden;
+	z-index: 1001;
+	background: repeating-linear-gradient( -120deg, rgb(224, 224, 224) 5px, rgb(255, 255, 255) 8px, rgb(214, 213, 213) 5px, rgb(241, 241, 241) 6px);
+	@include transition(.5s);
+	@include media-breakpoint-up(lg){
+		width: 25%;
+	}
+	@include media-breakpoint-down(md){
+		width: 270px;
+		@include translateX(-270px);
+		padding-top: 2em;
+	}
+	#colorlib-logo {
+		margin-bottom: 2.5em;
+		display: block;
+		width: 100%;
+		font-weight: 900;
+		font-size: 34px;
+		@include media-breakpoint-down(md){
+			margin-bottom: 20px;
+		}
+		
+		img {
+			height: 100px;
+			width: 100px;
+		}
+	}
+	#colorlib-main-menu {
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				margin: 0 0 15px 0;
+				padding: 0;
+				list-style: none;
+				font-size: 16px;
+				font-weight: 700;
+				a {
+					color: rgba(0,0,0,.9);
+					text-decoration: none;
+					position: relative;
+					padding: 10px 0;
+					font-family: $font-primary;
+					@include transition(.3s);
+					&:after {
+						content: "";
+						position: absolute;
+						height: 1px;
+						bottom: 7px;
+						left: 0;
+						right: 0;
+						background-color: $black;
+						visibility: hidden;
+						-webkit-transform: scaleX(0);
+						-moz-transform: scaleX(0);
+						-ms-transform: scaleX(0);
+						-o-transform: scaleX(0);
+						transform: scaleX(0);
+						-webkit-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+						-moz-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+						-ms-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+						-o-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+						transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+					}
+					&:hover {
+						text-decoration: none;
+						color: rgba(0,0,0,1);
+						
+						&:after {
+							visibility: visible;
+							-webkit-transform: scaleX(1);
+							-moz-transform: scaleX(1);
+							-ms-transform: scaleX(1);
+							-o-transform: scaleX(1);
+							transform: scaleX(1);
+						}
+					}
+					&:active {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+
+	#hire-button {
+		padding-top: 50px;
+	}
+
+	.colorlib-footer {
+		position: absolute;
+		bottom: 40px;
+		right: 1.5em;
+		left: 1.5em;
+		font-size: 14px;
+		font-weight: 400;
+		color: rgba(0,0,0,.6);
+		padding: 0 20px;
+		span {
+			display: block;
+		}
+		ul {
+			padding: 0;
+			margin: 0;
+			li {
+				padding: 0;
+				margin: 0;
+				display: inline;
+				list-style: none;
+				a {
+					color: rgba(0,0,0,.7);
+					padding: 4px;
+					&:hover, &:active, &:focus {
+						text-decoration: none;
+						outline: none;
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+}
