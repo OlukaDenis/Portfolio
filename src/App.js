@@ -13,20 +13,18 @@ import initFontAwesome from './utils/initFontAwesome';
 
 initFontAwesome();
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <HashRouter>
-        <div id="colorlib-page">
-          <SideBar />
-          <div id="colorlib-main">
-            <Route exact path="/" component={AboutLayout} />
-            <Route path="/projects" component={ProjectsLayout} />
-            <Route path="/skills" component={SkillsLayout} />
-            <Route path="/blog" component={BlogLayout} />
-          </div>
-        </div>
-      </HashRouter>
-    );
-  }
-}
+const App = () => (
+  <HashRouter>
+    <div id="colorlib-page">
+      <SideBar />
+      <div id="colorlib-main">
+        <Route exact path="/" component={AboutLayout} />
+        <Route path="/projects" component={ProjectsLayout} />
+        <Route path="/skills" component={SkillsLayout} />
+        <Route path="/blog" component={BlogLayout} />
+      </div>
+    </div>
+  </HashRouter>
+);
+
+export default App;

@@ -1,15 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.scss';
 import '../scss/NavBar.scss';
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   NavLink,
   HashRouter,
 } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import initFontAwesome from '../utils/initFontAwesome';
 import NavBar from './navbar/Navbar';
 
@@ -23,7 +18,6 @@ export default function SideBar() {
       </div>
       <aside
         id="colorlib-aside"
-        role="complementary"
         className="js-fullheight text-center"
       >
         <div id="colorlib-logo">

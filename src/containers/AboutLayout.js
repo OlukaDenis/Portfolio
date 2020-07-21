@@ -1,7 +1,6 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../App.scss';
 
@@ -16,7 +15,8 @@ export default function AboutLayout() {
               <h1 className="name">Denis Oluka</h1>
               <h5 className="title">Full-stack developer.</h5>
               <p className="info">
-                I'm a creative software developer currently based in Kampala-Uganda. I have experience in distributed and remote first-teams.
+                I&apos;m a creative software developer currently based in Kampala-Uganda.
+                I have experience in distributed and remote first-teams.
               </p>
               <div className="social-icons">
                 <ul className="text-center">

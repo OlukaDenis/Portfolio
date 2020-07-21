@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCode, faEye, faEnvelope, faMapMarkerAlt, faPhone,
+  faEnvelope, faMapMarkerAlt, faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../scss/footer.scss';
@@ -12,7 +12,7 @@ const Footer = () => (
       <Row>
         <div className="col-md-12">
           <div className="ftco-footer-widget">
-            <h2 className="ftco-heading-2">Let's Connect</h2>
+            <h2 className="ftco-heading-2">Let&apos;s Connect</h2>
             <div className="block-23 mb-3">
               <p>
                 {' '}
