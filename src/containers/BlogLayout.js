@@ -49,7 +49,7 @@ export default class BlogLayout extends Component {
                             <a
                               href={blog.link}
                               target="_blank"
-                              rel="noreferrer"
+                              rel="noopener noreferrer"
                             >
                               {blog.title}
                             </a>
@@ -60,7 +60,7 @@ export default class BlogLayout extends Component {
                             <a
                               href={blog.link}
                               target="_blank"
-                              rel="noreferrer"
+                              rel="noopener noreferrer"
                               className="btn btn-primary link-btn"
                             >
                               <FontAwesomeIcon icon={faAngleRight} />
