@@ -32,16 +32,8 @@ export default class ProjectsLayout extends Component {
     const { data, loading, error } = this.state;
     return (
       <div id="projects">
-        <div className="hero-wrap">
-          <div className="d-flex justify-content-center align-items-center">
-            <div className="col-md-8 text text-center">
-              <div className="desc">
-                <h1 className="heading-title">Projects</h1>
-              </div>
-            </div>
-          </div>
-        </div>
         <section className="ftco-section">
+        <h1 className="heading-title">Projects</h1>
           <Container>
             <Row>
               {(() => {

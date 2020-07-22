@@ -110,8 +110,9 @@ h5,
   color: white;
   letter-spacing: 1px;
   font-weight: 900;
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
+  background-color: $header-bg;
 
   @include media-breakpoint-down(md) {
     padding-top: 100px;
@@ -206,9 +207,8 @@ h5,
   60% { border-color: $primary; }
 }
 
-.ftco-section {
-  padding: 0.8em 1.8em;
-  position: relative;
+.ftco-section .container {
+  padding: 0.8em 2em;
 
   @include media-breakpoint-down(md) {
     padding-top: 1.5em;

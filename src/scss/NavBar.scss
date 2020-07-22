@@ -99,6 +99,12 @@
             color: $primary;
           }
         }
+
+        &:hover {
+          a {
+            color: $primary;
+          }
+        }
       }
     }
   }
