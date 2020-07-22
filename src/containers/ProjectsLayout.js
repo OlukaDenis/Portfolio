@@ -32,7 +32,7 @@ export default class ProjectsLayout extends Component {
   projectAnalytics(link) {
     this.setState({ error: '' });
     ReactGA.event({
-      category: 'Test',
+      category: 'Projects',
       action: `Visited: ${link}`,
     });
   }
