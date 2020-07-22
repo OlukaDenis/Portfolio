@@ -5,15 +5,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ReactGA from 'react-ga';
 import '../scss/About.scss';
 
-
 export default function AboutLayout() {
-
-  const socialAnalytics = (link) => {
+  const socialAnalytics = link => {
     ReactGA.event({
       category: 'Social',
       action: `Visited: ${link}`,
     });
-  }
+  };
 
   return (
     <section id="about" className="about-section text-center">
@@ -31,45 +29,62 @@ export default function AboutLayout() {
               <div className="social-icons">
                 <ul>
                   <li>
-                    <a href="https://www.facebook.com/dennylucaz" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    onClick={() => socialAnalytics('Facebook profile')}>
+                    <a
+                      href="https://www.facebook.com/dennylucaz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => socialAnalytics('Facebook profile')}
+                    >
                       <FontAwesomeIcon icon={['fab', 'facebook']} />
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/dennylucaz" 
-                    target="_blank" rel="noopener noreferrer"
-                    onClick={() => socialAnalytics('Twitter profile')}>
+                    <a
+                      href="https://twitter.com/dennylucaz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => socialAnalytics('Twitter profile')}
+                    >
                       <FontAwesomeIcon icon={['fab', 'twitter']} />
                     </a>
                   </li>
                   <li>
-                    <a href="https://angel.co/u/denis-oluka" 
-                    target="_blank" rel="noopener noreferrer"
-                    onClick={() => socialAnalytics('Angelist profile')}>
+                    <a
+                      href="https://angel.co/u/denis-oluka"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => socialAnalytics('Angelist profile')}
+                    >
                       <FontAwesomeIcon icon={['fab', 'angellist']} />
                     </a>
                   </li>
                   <li>
-                    <a href="https://linkedin.com/in/denis-oluka" 
-                    target="_blank" rel="noopener noreferrer"
-                    onClick={() => socialAnalytics('LinkedIn profile')}>
+                    <a
+                      href="https://linkedin.com/in/denis-oluka"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => socialAnalytics('LinkedIn profile')}
+                    >
                       <FontAwesomeIcon icon={['fab', 'linkedin']} />
                     </a>
                   </li>
                   <li>
-                    <a href="https://github.com/OlukaDenis" 
-                    target="_blank" rel="noopener noreferrer"
-                    onClick={() => socialAnalytics('GitHub profile')}>
+                    <a
+                      href="https://github.com/OlukaDenis"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => socialAnalytics('GitHub profile')}
+                    >
                       <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
                   </li>
                   <li>
-                    <a href="skype:deniz.lucaz" 
-                    target="_blank" rel="noopener noreferrer"
-                    onClick={() => socialAnalytics('Skype profile')}>
+                    <a
+                      href="skype:deniz.lucaz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => socialAnalytics('Skype profile')}
+                    >
                       <FontAwesomeIcon icon={['fab', 'skype']} />
                     </a>
                   </li>

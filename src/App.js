@@ -25,7 +25,7 @@ initFontAwesome();
 
 const App = () => {
   ReactGA.initialize(trackingId);
-  
+
   return (
     <Router history={history}>
       <div id="colorlib-page">
@@ -41,6 +41,6 @@ const App = () => {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

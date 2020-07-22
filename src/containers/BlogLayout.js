@@ -29,6 +29,7 @@ export default class BlogLayout extends Component {
   }
 
   blogAnalytics(link) {
+    this.setState({ error: '' });
     ReactGA.event({
       category: 'Blog',
       action: `Visited: ${link}`,
@@ -37,7 +38,7 @@ export default class BlogLayout extends Component {
 
   render() {
     const { data, loading, error } = this.state;
-    
+
     return (
       <div>
         <section className="ftco-section">

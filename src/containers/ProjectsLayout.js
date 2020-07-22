@@ -30,8 +30,9 @@ export default class ProjectsLayout extends Component {
   }
 
   projectAnalytics(link) {
+    this.setState({ error: '' });
     ReactGA.event({
-      category: 'Projects',
+      category: 'Test',
       action: `Visited: ${link}`,
     });
   }
@@ -41,7 +42,7 @@ export default class ProjectsLayout extends Component {
     return (
       <div id="projects">
         <section className="ftco-section">
-        <h1 className="heading-title">Projects</h1>
+          <h1 className="heading-title">Projects</h1>
           <Container>
             <Row>
               {(() => {
@@ -56,9 +57,9 @@ export default class ProjectsLayout extends Component {
                           <div className="detail-overlay">
                             <ul>
                               <li>
-                                <a 
-                                  href={element.liveLink} 
-                                  rel="noopener noreferrer" 
+                                <a
+                                  href={element.liveLink}
+                                  rel="noopener noreferrer"
                                   target="_blank"
                                   onClick={() => this.projectAnalytics(element.liveLink)}
                                 >
@@ -66,9 +67,9 @@ export default class ProjectsLayout extends Component {
                                 </a>
                               </li>
                               <li>
-                                <a 
-                                  href={element.github} 
-                                  rel="noopener noreferrer" 
+                                <a
+                                  href={element.github}
+                                  rel="noopener noreferrer"
                                   target="_blank"
                                   onClick={() => this.projectAnalytics(element.github)}
                                 >
@@ -88,12 +89,12 @@ export default class ProjectsLayout extends Component {
                           </div>
 
                           <h3 className="project-title">
-                            <a 
-                              href={element.liveLink} 
-                              rel="noopener noreferrer" 
+                            <a
+                              href={element.liveLink}
+                              rel="noopener noreferrer"
                               target="_blank"
                               onClick={() => this.projectAnalytics(element.liveLink)}
-                              >
+                            >
                               {element.name}
                             </a>
                           </h3>
