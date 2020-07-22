@@ -19,7 +19,7 @@ export default function AboutLayout() {
                 I have experience in distributed and remote first-teams.
               </p>
               <div className="social-icons">
-                <ul className="text-center">
+                <ul>
                   <li>
                     <a href="https://www.facebook.com/dennylucaz" target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={['fab', 'facebook']} />

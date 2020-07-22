@@ -22,7 +22,7 @@
 		position: relative;
 		@include border-radius(3px);
 		@include media-breakpoint-down(sm){
-			height: 300px;			
+			height: 230px;			
 		}
 
 		.detail-overlay{

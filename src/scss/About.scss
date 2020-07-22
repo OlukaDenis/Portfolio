@@ -48,7 +48,7 @@ h4{
     typing 4s steps(30, end),
     blink-caret .80s step-end infinite;
   @include media-breakpoint-down(sm){
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 90%;
   }
 }
@@ -62,8 +62,8 @@ h4{
   margin: 0 auto;
   color: $whitish;
   @include media-breakpoint-down(sm){
-    font-size: 1.5rem;
-    width: 90%;
+    font-size: 1.3rem;
+    width: 95%;
   }
 }
 
@@ -71,8 +71,10 @@ h4{
   padding-top: 40px;
   display: block;
   width: 100%;
+
   ul {
     list-style-type: none;
+    padding-left: 0;
     li {
       display: inline-block;
       padding: 0 16px;
@@ -83,7 +85,7 @@ h4{
           color: $primary;
         }
         @include media-breakpoint-down(sm){
-          font-size: 1.4rem;
+          font-size: 1.2rem;
         }
       }
       @include media-breakpoint-down(sm){

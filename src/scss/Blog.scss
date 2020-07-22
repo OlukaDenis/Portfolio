@@ -8,6 +8,10 @@
   a {
     color: $white;
     font-size: 1.5rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1.2rem;
+    }
   }
 
 
@@ -15,7 +19,11 @@
     height: 300px; 
     border-radius: 10px 0 0 10px; 
     @include media-breakpoint-down(md){
-    border-radius: 10px 10px 0 0; 
+      border-radius: 10px 10px 0 0; 
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 200px;
     }
   }
 
@@ -28,6 +36,10 @@
       font-family: $font-primary;
       font-size: 0.9rem;
       padding-top: 10px;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 0.8rem;
+      }
     }
 
     .blog-meta {
@@ -36,6 +48,10 @@
         text-transform: uppercase;
         font-weight: lighter;
         padding-top: 20px;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 0.6rem;
+        }
       }
     }
   }

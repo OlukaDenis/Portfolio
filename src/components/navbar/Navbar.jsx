@@ -19,7 +19,7 @@ const Nav = styled.nav`
   position: fixed;
   z-index: 555;
   background-color: #011426;
-`
+`;
 
 const Navbar = () => {
   return (
