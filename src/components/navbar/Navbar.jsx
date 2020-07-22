@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
+import { Link } from 'react-router-dom';
 
 const Logo = styled.img`
   height: 60px;
@@ -24,12 +25,12 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div>
+      <Link to="/">
         <Logo src="images/logo_light.png" alt="Denny Logo" />
-      </div>
+      </Link>
       <Burger />
     </Nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

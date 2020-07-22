@@ -2,7 +2,8 @@ import React from 'react';
 import './App.scss';
 import {
   Route,
-  HashRouter,
+  BrowserRouter as Router,
+  Switch,
 } from 'react-router-dom';
 import AboutLayout from './containers/AboutLayout';
 import ProjectsLayout from './containers/ProjectsLayout';
@@ -14,17 +15,19 @@ import initFontAwesome from './utils/initFontAwesome';
 initFontAwesome();
 
 const App = () => (
-  <HashRouter>
+  <Router>
     <div id="colorlib-page">
       <SideBar />
       <div id="colorlib-main">
-        <Route exact path="/" component={AboutLayout} />
-        <Route path="/projects" component={ProjectsLayout} />
-        <Route path="/skills" component={SkillsLayout} />
-        <Route path="/blog" component={BlogLayout} />
+        <Switch>
+          <Route exact path="/" component={AboutLayout} />
+          <Route exact path="/projects" component={ProjectsLayout} />
+          <Route exact path="/skills" component={SkillsLayout} />
+          <Route exact path="/blog" component={BlogLayout} />
+        </Switch>
       </div>
     </div>
-  </HashRouter>
+  </Router>
 );
 
 export default App;

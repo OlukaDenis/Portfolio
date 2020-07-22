@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import '../../scss/NavBar.scss';
-import {
-  NavLink,
-  HashRouter,
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Ul = styled.ul`
   list-style: none;
@@ -51,12 +48,12 @@ const Ul = styled.ul`
 `;
 
 const RightNav = ({ open, handleClick }) => (
-  <HashRouter>
+  <>
     <Ul open={open}>
-      <li onClick={handleClick}><NavLink exact to="/" className="nav-link"> About </NavLink></li>
-      <li onClick={handleClick}><NavLink to="/projects" className="nav-link"> Projects </NavLink></li>
-      <li onClick={handleClick}><NavLink to="/skills" className="nav-link"> Skills </NavLink></li>
-      <li onClick={handleClick}><NavLink to="/blog" className="nav-link"> Blog </NavLink></li>
+      <li onClick={handleClick}><Link exact to="/" className="nav-link"> About </Link></li>
+      <li onClick={handleClick}><Link exact to="/projects" className="nav-link"> Projects </Link></li>
+      <li onClick={handleClick}><Link exact to="/skills" className="nav-link"> Skills </Link></li>
+      <li onClick={handleClick}><Link exact to="/blog" className="nav-link"> Blog </Link></li>
       <li onClick={handleClick}>
         <a
           href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing"
@@ -78,7 +75,7 @@ const RightNav = ({ open, handleClick }) => (
         </a>
       </li>
     </Ul>
-  </HashRouter>
+  </>
 );
 
 export default RightNav;
