@@ -4,10 +4,27 @@ import '../scss/NavBar.scss';
 import { NavLink } from 'react-router-dom';
 import initFontAwesome from '../utils/initFontAwesome';
 import NavBar from './navbar/Navbar';
+import ReactGA from 'react-ga';
 
 initFontAwesome();
 
 export default function SideBar() {
+  ReactGA.initialize('UA-161206924-2');
+
+  const registerResumeAnalytics = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'View my resume'
+    });
+  }
+
+  const registerHireAnalytics = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Send a hire me email'
+    });
+  }
+
   return (
       <>
         <div className="side-bar-menu">
@@ -31,7 +48,7 @@ export default function SideBar() {
             </ul>
           </nav>
 
-          <div id="resume-button">
+          <div id="resume-button" onClick={registerResumeAnalytics}>
             <a
               href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing"
               className="btn btn-primary"
@@ -42,7 +59,7 @@ export default function SideBar() {
               Resume
             </a>
           </div>
-          <div id="hire-button">
+          <div id="hire-button" onClick={registerHireAnalytics}>
             <a
               className="btn btn-primary"
               href="mailto:olukadeno@gmail.com"

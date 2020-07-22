@@ -6,7 +6,7 @@ import {
   faCode, faEye,
 } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
 
@@ -18,6 +18,7 @@ export default class ProjectsLayout extends Component {
       error: '',
       loading: true,
     };
+    this.projectAnalytics = this.projectAnalytics.bind(this);
   }
 
   async componentDidMount() {
@@ -26,6 +27,13 @@ export default class ProjectsLayout extends Component {
       .json()
       .then(result =>	this.setState({ data: result, loading: false }))
       .catch(err => this.setState({ error: err, loading: false }));
+  }
+
+  projectAnalytics(link) {
+    ReactGA.event({
+      category: 'Link',
+      action: `Visited: ${link}`,
+    });
   }
 
   render() {
@@ -48,12 +56,22 @@ export default class ProjectsLayout extends Component {
                           <div className="detail-overlay">
                             <ul>
                               <li>
-                                <a href={element.liveLink} rel="noopener noreferrer" target="_blank">
+                                <a 
+                                  href={element.liveLink} 
+                                  rel="noopener noreferrer" 
+                                  target="_blank"
+                                  onClick={() => this.projectAnalytics(element.liveLink)}
+                                >
                                   <FontAwesomeIcon icon={faEye} />
                                 </a>
                               </li>
                               <li>
-                                <a href={element.github} rel="noopener noreferrer" target="_blank">
+                                <a 
+                                  href={element.github} 
+                                  rel="noopener noreferrer" 
+                                  target="_blank"
+                                  onClick={() => this.projectAnalytics(element.github)}
+                                >
                                   <FontAwesomeIcon icon={faCode} />
                                 </a>
                               </li>
@@ -70,9 +88,14 @@ export default class ProjectsLayout extends Component {
                           </div>
 
                           <h3 className="project-title">
-                            <Link to={element.liveLink} target="_blank">
+                            <a 
+                              href={element.liveLink} 
+                              rel="noopener noreferrer" 
+                              target="_blank"
+                              onClick={() => this.projectAnalytics(element.liveLink)}
+                              >
                               {element.name}
-                            </Link>
+                            </a>
                           </h3>
                           <p className="project-desc">
                             {element.description}

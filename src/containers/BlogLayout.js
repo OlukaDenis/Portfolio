@@ -4,6 +4,7 @@ import '../App.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import ReactGA from 'react-ga';
 import '../scss/Blog.scss';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
@@ -16,6 +17,7 @@ export default class BlogLayout extends Component {
       error: '',
       loading: true,
     };
+    this.blogAnalytics = this.blogAnalytics.bind(this);
   }
 
   async componentDidMount() {
@@ -26,8 +28,16 @@ export default class BlogLayout extends Component {
       .catch(err => this.setState({ error: err, loading: false }));
   }
 
+  blogAnalytics(link) {
+    ReactGA.event({
+      category: 'Link',
+      action: `Visited: ${link}`,
+    });
+  }
+
   render() {
     const { data, loading, error } = this.state;
+    
     return (
       <div>
         <section className="ftco-section">
@@ -50,6 +60,7 @@ export default class BlogLayout extends Component {
                               href={blog.link}
                               target="_blank"
                               rel="noopener noreferrer"
+                              onClick={() => this.blogAnalytics(blog.link)}
                             >
                               {blog.title}
                             </a>
@@ -62,6 +73,7 @@ export default class BlogLayout extends Component {
                               target="_blank"
                               rel="noopener noreferrer"
                               className="btn btn-primary link-btn"
+                              onClick={() => this.blogAnalytics(blog.link)}
                             >
                               <FontAwesomeIcon icon={faAngleRight} />
                             </a>
