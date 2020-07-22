@@ -30,7 +30,7 @@ export default class BlogLayout extends Component {
 
   blogAnalytics(link) {
     ReactGA.event({
-      category: 'Link',
+      category: 'Blog',
       action: `Visited: ${link}`,
     });
   }

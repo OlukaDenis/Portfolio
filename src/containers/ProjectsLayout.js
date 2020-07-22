@@ -31,7 +31,7 @@ export default class ProjectsLayout extends Component {
 
   projectAnalytics(link) {
     ReactGA.event({
-      category: 'Link',
+      category: 'Projects',
       action: `Visited: ${link}`,
     });
   }
