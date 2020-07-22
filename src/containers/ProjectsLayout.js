@@ -22,6 +22,7 @@ export default class ProjectsLayout extends Component {
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     const response = await fetch('data/projects.json');
     response
       .json()

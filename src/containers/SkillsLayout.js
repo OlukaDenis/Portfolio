@@ -17,6 +17,7 @@ export default class SkillsLayout extends Component {
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     const response = await fetch('data/skills.json');
     const res = response.json();
     res

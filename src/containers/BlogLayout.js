@@ -21,6 +21,7 @@ export default class BlogLayout extends Component {
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     const response = await fetch('data/blogs.json');
     const res = response.json();
     res
