@@ -53,14 +53,14 @@ const RightNav = ({ open, handleClick }) => {
 
   const registerResumeAnalytics = () => {
     ReactGA.event({
-      category: 'Button',
+      category: 'Resume',
       action: 'View my resume'
     });
   }
 
   const registerHireAnalytics = () => {
     ReactGA.event({
-      category: 'Button',
+      category: 'Hire Me',
       action: 'Send a hire me email'
     });
   }
@@ -78,7 +78,7 @@ const RightNav = ({ open, handleClick }) => {
             className="btn btn-primary resume-btn"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={registerResumeAnalytics}
+            onClick={() => registerResumeAnalytics}
           >
             Resume
           </a>
@@ -89,7 +89,7 @@ const RightNav = ({ open, handleClick }) => {
             className="btn btn-primary resume-btn"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={registerHireAnalytics}
+            onClick={() => registerHireAnalytics}
           >
             Hire Me
           </a>

@@ -13,14 +13,14 @@ export default function SideBar() {
 
   const registerResumeAnalytics = () => {
     ReactGA.event({
-      category: 'Button',
+      category: 'Resume',
       action: 'View my resume',
     });
   };
 
   const registerHireAnalytics = () => {
     ReactGA.event({
-      category: 'Button',
+      category: 'Hire Me',
       action: 'Send a hire me email',
     });
   };
