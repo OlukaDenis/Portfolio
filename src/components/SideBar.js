@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.scss';
 import '../scss/NavBar.scss';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import initFontAwesome from '../utils/initFontAwesome';
 import NavBar from './navbar/Navbar';
 
@@ -18,16 +18,16 @@ export default function SideBar() {
           className="js-fullheight text-center"
         >
           <div id="colorlib-logo">
-            <Link to="/">
+            <NavLink to="/">
               <img src="images/logo.png" alt="Denny Logo" />
-            </Link>
+            </NavLink>
           </div>
           <nav id="colorlib-main-menu" role="navigation">
             <ul>
-              <li><Link exact to="/" className="nav-link"> About </Link></li>
-              <li><Link exact to="/projects" className="nav-link"> Projects </Link></li>
-              <li><Link exact to="/skills" className="nav-link"> Skills </Link></li>
-              <li><Link exact to="/blog" className="nav-link"> Blog </Link></li>
+              <li><NavLink exact to="/" activeClassName="nav-link--active" className="nav-link"> About </NavLink></li>
+              <li><NavLink exact to="/projects" activeClassName="nav-link--active" className="nav-link"> Projects </NavLink></li>
+              <li><NavLink exact to="/skills" activeClassName="nav-link--active" className="nav-link"> Skills </NavLink></li>
+              <li><NavLink exact to="/blog" activeClassName="nav-link--active" className="nav-link"> Blog </NavLink></li>
             </ul>
           </nav>
 
