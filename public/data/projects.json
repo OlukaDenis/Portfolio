@@ -30,6 +30,47 @@
     ]
   },
 
+  {
+    "id": 7,
+    "name": "Keen Foods",
+    "image": "images/keen-foods.png",
+    "liveLink": "https://keen-foods.herokuapp.com",
+    "github": "https://github.com/OlukaDenis/meal-catalogue",
+    "description": "A web app that provides detailed information on how to prepare you favorite recipes.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+
+      {
+        "id": 115,
+        "name": "React"
+      },
+
+      {
+        "id": 116,
+        "name": "Redux"
+      },
+
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
   
   {
     "id": 2,
@@ -168,6 +209,159 @@
         "id": 110,
         "name": "web"
       },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+
+  {
+    "id": 8,
+    "name": "Bookstore",
+    "image": "images/bookstore.png",
+    "liveLink": "https://react-bookstore-tash-den.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/react-bookstore",
+    "description": "A web app that provides an interface for adding, delete edit and filtering books.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+
+      {
+        "id": 115,
+        "name": "React"
+      },
+
+      {
+        "id": 116,
+        "name": "Redux"
+      },
+
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+
+  {
+    "id": 9,
+    "name": "Weather App",
+    "image": "images/weather-app.png",
+    "liveLink": "https://weather-cloud.netlify.app/",
+    "github": "https://github.com/OlukaDenis/weather-app",
+    "description": "A web app that allows you to search for weather forecast  of different cities around the globe.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+
+  {
+    "id": 10,
+    "name": "Tic Tac Toe",
+    "image": "images/tictactoe.png",
+    "liveLink": "https://weather-cloud.netlify.app/",
+    "github": "https://raw.githack.com/OlukaDenis/TicTacToe-Javascript/development/index.html",
+    "description": "A 2D web multiplayer game.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+
+  {
+    "id": 11,
+    "name": "Fitaita",
+    "image": "images/fitaita.png",
+    "liveLink": "https://fitaita.netlify.app/",
+    "github": "https://github.com/OlukaDenis/Fitaita",
+    "description": "Fitaita is a 2D RPG video game built with PhaserJs, an open source framework for Canvas and WebGL powered games.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+
+      {
+        "id": 115,
+        "name": "PhaserJs"
+      },
+
+      {
+        "id": 117,
+        "name": "WebGL"
+      },
+
+      {
+        "id": 116,
+        "name": "Canvas"
+      },
+
       {
         "id": 111,
         "name": "Javascript"

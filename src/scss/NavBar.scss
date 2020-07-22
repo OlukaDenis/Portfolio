@@ -135,6 +135,7 @@
       border: 1px solid $primary;
       background-color: rgba(255, 255, 255, 0);
       color: $primary;
+      font-family: $font-primary;
 
       &:hover {
         background-color: $primary;
@@ -145,6 +146,7 @@
 
   #hire-button {
     padding-top: 50px;
+    font-family: $font-primary;
   }
 
   .colorlib-footer {
