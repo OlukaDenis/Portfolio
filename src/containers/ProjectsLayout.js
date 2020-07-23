@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'antd/dist/antd.css';
 import '../scss/Project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
