@@ -9,23 +9,23 @@
     "tags": [
       {
         "id": 110,
-        "name": "web"
+        "name": "Mobile"
       },
       {
         "id": 111,
-        "name": "Javascript"
+        "name": "Android"
       },
       {
         "id": 112,
-        "name": "NodeJs"
+        "name": "Java"
       },
       {
         "id": 113,
-        "name": "Babel"
+        "name": "Retrofit"
       },
       {
         "id": 114,
-        "name": "Webpack"
+        "name": "Google Play"
       }
     ]
   },
