@@ -14,7 +14,6 @@ const ProjectsLayout = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
 
-
   useEffect(() => {
     window.scrollTo(0, 0);
     const fetchData = async () => {
@@ -26,17 +25,17 @@ const ProjectsLayout = () => {
           setLoading(false);
         })
         .catch(err => setError(err));
-    }
+    };
     fetchData();
   }, []);
- 
+
   const projectAnalytics = link => {
     setError('');
     ReactGA.event({
       category: 'Projects',
       action: `Visited: ${link}`,
     });
-  }
+  };
 
   return (
     <div id="projects">
@@ -51,7 +50,7 @@ const ProjectsLayout = () => {
               return error ? <p>Error</p>
                 : data.map(element => (
                   <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
-                    <div className="blog-entry" >
+                    <div className="blog-entry">
                       <div className="img img-2">
                         <div className="detail-overlay">
                           <ul>
@@ -60,7 +59,7 @@ const ProjectsLayout = () => {
                                 href={element.liveLink}
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                onClick={() => this.projectAnalytics(element.liveLink)}
+                                onClick={() => projectAnalytics(element.liveLink)}
                               >
                                 <FontAwesomeIcon icon={faEye} />
                               </a>
@@ -70,7 +69,7 @@ const ProjectsLayout = () => {
                                 href={element.github}
                                 rel="noopener noreferrer"
                                 target="_blank"
-                                onClick={() => this.projectAnalytics(element.github)}
+                                onClick={() => projectAnalytics(element.github)}
                               >
                                 <FontAwesomeIcon icon={faCode} />
                               </a>
@@ -114,6 +113,6 @@ const ProjectsLayout = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default ProjectsLayout;
