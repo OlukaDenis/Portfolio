@@ -1,13 +1,17 @@
 @import 'variables.scss';
 
 .blog-item {
-  background-color: $background-2;
+  background-color: $header-bg;
   margin-bottom: 30px;
   border-radius: 10px;
 
   a {
     color: $white;
     font-size: 1.5rem;
+
+    &:hover {
+      color: white;
+    }
 
     @include media-breakpoint-down(sm) {
       font-size: 1.2rem;
@@ -16,14 +20,17 @@
 
   .blog-image {
     height: 300px;
+    width: 45%;
     border-radius: 10px 0 0 10px;
 
     @include media-breakpoint-down(md) {
       border-radius: 10px 10px 0 0;
+      width: 100%;
     }
 
     @include media-breakpoint-down(sm) {
       height: 200px;
+      width: 100%;
     }
   }
 

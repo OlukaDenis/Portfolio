@@ -1,5 +1,17 @@
 @import './scss/variables.scss';
 
+#colorlib-main {
+  background-color: $background;
+  width: 100%;
+  float: right;
+
+  @include transition(0.5s);
+
+  @include media-breakpoint-up(lg) {
+    width: 75%;
+  }
+}
+
 body {
   font-family: $font-primary;
   background: $white;
@@ -77,18 +89,6 @@ h5,
   width: 100%;
   overflow: hidden;
   position: relative;
-}
-
-#colorlib-main {
-  background-color: $background;
-  width: 100%;
-  float: right;
-
-  @include transition(0.5s);
-
-  @include media-breakpoint-up(lg) {
-    width: 75%;
-  }
 }
 
 .about-container {
@@ -210,8 +210,9 @@ h5,
 .ftco-section {
   position: relative;
 }
+
 .ftco-section .container {
-  padding: 0.8em 2em;
+  padding: 2em;
 
   @include media-breakpoint-down(md) {
     padding-top: 1.5em;

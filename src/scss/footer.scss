@@ -91,18 +91,3 @@
     }
   }
 }
-
-.footer-small-nav {
-  > li {
-    display: inline-block;
-
-    a {
-      margin: 0 10px 10px 0;
-
-      &:hover,
-      &:focus {
-        color: $primary;
-      }
-    }
-  }
-}
