@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import 'antd/dist/antd.css';
 import '../scss/Project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCode, faEye,
 } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
 
@@ -18,9 +17,11 @@ export default class ProjectsLayout extends Component {
       error: '',
       loading: true,
     };
+    this.projectAnalytics = this.projectAnalytics.bind(this);
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     const response = await fetch('data/projects.json');
     response
       .json()
@@ -28,20 +29,20 @@ export default class ProjectsLayout extends Component {
       .catch(err => this.setState({ error: err, loading: false }));
   }
 
+  projectAnalytics(link) {
+    this.setState({ error: '' });
+    ReactGA.event({
+      category: 'Projects',
+      action: `Visited: ${link}`,
+    });
+  }
+
   render() {
     const { data, loading, error } = this.state;
     return (
       <div id="projects">
-        <div className="hero-wrap">
-          <div className="d-flex justify-content-center align-items-center">
-            <div className="col-md-8 text text-center">
-              <div className="desc">
-                <h1 className="heading-title">Projects</h1>
-              </div>
-            </div>
-          </div>
-        </div>
         <section className="ftco-section">
+          <h1 className="heading-title">Projects</h1>
           <Container>
             <Row>
               {(() => {
@@ -50,18 +51,28 @@ export default class ProjectsLayout extends Component {
                 }
                 return error ? <p>Error</p>
                   : data.map(element => (
-                    <Col key={element.id} md={6} lg={6} sm={10}>
-                      <div className="blog-entry">
-                        <div className="img img-2" style={{ backgroundColor: '#eee' }}>
+                    <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
+                      <div className="blog-entry" >
+                        <div className="img img-2">
                           <div className="detail-overlay">
                             <ul>
                               <li>
-                                <a href={element.liveLink} rel="noopener noreferrer" target="_blank">
+                                <a
+                                  href={element.liveLink}
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                  onClick={() => this.projectAnalytics(element.liveLink)}
+                                >
                                   <FontAwesomeIcon icon={faEye} />
                                 </a>
                               </li>
                               <li>
-                                <a href={element.github} rel="noopener noreferrer" target="_blank">
+                                <a
+                                  href={element.github}
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                  onClick={() => this.projectAnalytics(element.github)}
+                                >
                                   <FontAwesomeIcon icon={faCode} />
                                 </a>
                               </li>
@@ -78,9 +89,14 @@ export default class ProjectsLayout extends Component {
                           </div>
 
                           <h3 className="project-title">
-                            <Link to={element.liveLink} target="_blank">
+                            <a
+                              href={element.liveLink}
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              onClick={() => this.projectAnalytics(element.liveLink)}
+                            >
                               {element.name}
-                            </Link>
+                            </a>
                           </h3>
                           <p className="project-desc">
                             {element.description}

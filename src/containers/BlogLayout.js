@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import 'antd/dist/antd.css';
 import '../App.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import ReactGA from 'react-ga';
 import '../scss/Blog.scss';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
@@ -16,9 +16,11 @@ export default class BlogLayout extends Component {
       error: '',
       loading: true,
     };
+    this.blogAnalytics = this.blogAnalytics.bind(this);
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     const response = await fetch('data/blogs.json');
     const res = response.json();
     res
@@ -26,8 +28,17 @@ export default class BlogLayout extends Component {
       .catch(err => this.setState({ error: err, loading: false }));
   }
 
+  blogAnalytics(link) {
+    this.setState({ error: '' });
+    ReactGA.event({
+      category: 'Blog',
+      action: `Visited: ${link}`,
+    });
+  }
+
   render() {
     const { data, loading, error } = this.state;
+
     return (
       <div>
         <section className="ftco-section">
@@ -40,7 +51,7 @@ export default class BlogLayout extends Component {
                 }
                 return error ? <p>Error</p>
                   : data.map(blog => (
-                    <Col key={blog.id} md={10} lg={12} sm={10}>
+                    <Col key={blog.id} md={10} lg={12} sm={10} style={{ margin: '0 auto' }}>
                       <div className="blog-item d-flex flex-column flex-lg-row">
                         <img className="blog-image flex-fill" src={blog.image} alt={blog.title} />
 
@@ -49,7 +60,8 @@ export default class BlogLayout extends Component {
                             <a
                               href={blog.link}
                               target="_blank"
-                              rel="noreferrer"
+                              rel="noopener noreferrer"
+                              onClick={() => this.blogAnalytics(blog.link)}
                             >
                               {blog.title}
                             </a>
@@ -60,8 +72,9 @@ export default class BlogLayout extends Component {
                             <a
                               href={blog.link}
                               target="_blank"
-                              rel="noreferrer"
+                              rel="noopener noreferrer"
                               className="btn btn-primary link-btn"
+                              onClick={() => this.blogAnalytics(blog.link)}
                             >
                               <FontAwesomeIcon icon={faAngleRight} />
                             </a>

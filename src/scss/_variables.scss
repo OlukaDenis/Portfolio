@@ -2,41 +2,42 @@
 @import '~bootstrap/scss/bootstrap';
 @import '~bootstrap/scss/variables';
 
-$font-secondary: 'Poppins',Arial, sans-serif;
+$font-secondary: 'Poppins',arial, sans-serif;
 $cursive-font: 'Bad Script', cursive;
 $font-primary: 'Montserrat', sans-serif;
 
 $white: #fff;
-$black: #000000;
+$black: #000;
 $darken: #3a4348;
 $background:  #001a33;
-$background-2: #022d55;
+$background-2: #001a3367;
+$header-bg: #132238;
 
-$primary: #f05d23;
+$primary: #ff4800;
 $primary-light: #fdf8f6;
 $secondary: #5dd28e;
-$grayish: #999999;
+$grayish: #999;
 $whitish: #d9d9d9;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin transition($transition) {
-    -moz-transition:    all $transition ease;
-    -o-transition:      all $transition ease;
-    -webkit-transition: all $transition ease;
-    -ms-transition: 		all $transition ease;
-    transition:         all $transition ease;
+  -moz-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  transition: all $transition ease;
 }
 
 @mixin translateX($translatex) {
-	-moz-transform: translateX($translatex);
-	-webkit-transform: translateX($translatex);
-	-ms-transform: translateX($translatex);
-	-o-transform: translateX($translatex);
-	transform: translateX($translatex);
+  -moz-transform: translateX($translatex);
+  -webkit-transform: translateX($translatex);
+  -ms-transform: translateX($translatex);
+  -o-transform: translateX($translatex);
+  transform: translateX($translatex);
 }

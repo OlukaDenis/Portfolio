@@ -1,18 +1,32 @@
 import React from 'react';
 import '../App.scss';
 import '../scss/NavBar.scss';
-import {
-  NavLink,
-  HashRouter,
-} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import ReactGA from 'react-ga';
 import initFontAwesome from '../utils/initFontAwesome';
 import NavBar from './navbar/Navbar';
 
 initFontAwesome();
 
 export default function SideBar() {
+  ReactGA.initialize('UA-161206924-2');
+
+  const registerResumeAnalytics = () => {
+    ReactGA.event({
+      category: 'Resume',
+      action: 'View my resume',
+    });
+  };
+
+  const registerHireAnalytics = () => {
+    ReactGA.event({
+      category: 'Hire Me',
+      action: 'Send a hire me email',
+    });
+  };
+
   return (
-    <HashRouter>
+    <>
       <div className="side-bar-menu">
         <NavBar />
       </div>
@@ -27,14 +41,20 @@ export default function SideBar() {
         </div>
         <nav id="colorlib-main-menu" role="navigation">
           <ul>
-            <li><NavLink exact to="/" className="nav-link"> About </NavLink></li>
-            <li><NavLink to="/projects" className="nav-link"> Projects </NavLink></li>
-            <li><NavLink to="/skills" className="nav-link"> Skills </NavLink></li>
-            <li><NavLink to="/blog" className="nav-link"> Blog </NavLink></li>
+            <li><NavLink exact to="/" activeClassName="nav-link--active" className="nav-link"> About </NavLink></li>
+            <li><NavLink exact to="/projects" activeClassName="nav-link--active" className="nav-link"> Projects </NavLink></li>
+            <li><NavLink exact to="/skills" activeClassName="nav-link--active" className="nav-link"> Skills </NavLink></li>
+            <li><NavLink exact to="/blog" activeClassName="nav-link--active" className="nav-link"> Blog </NavLink></li>
           </ul>
         </nav>
 
-        <div id="resume-button">
+        <div
+          id="resume-button"
+          onClick={() => registerResumeAnalytics}
+          onKeyDown={() => registerResumeAnalytics}
+          role="button"
+          tabIndex="0"
+        >
           <a
             href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing"
             className="btn btn-primary"
@@ -45,7 +65,13 @@ export default function SideBar() {
             Resume
           </a>
         </div>
-        <div id="hire-button">
+        <div
+          id="hire-button"
+          onClick={() => registerHireAnalytics}
+          onKeyDown={() => registerHireAnalytics}
+          role="button"
+          tabIndex="0"
+        >
           <a
             className="btn btn-primary"
             href="mailto:olukadeno@gmail.com"
@@ -56,6 +82,6 @@ export default function SideBar() {
           </a>
         </div>
       </aside>
-    </HashRouter>
+    </>
   );
 }

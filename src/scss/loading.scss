@@ -2,7 +2,7 @@
 
 .loading-section {
   background-color: $background;
-  height: 100vh;
+  height: 600px;
 
   @include media-breakpoint-down(sm) {
     height: 400px;

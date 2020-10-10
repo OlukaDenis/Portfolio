@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'antd/dist/antd.css';
 import '../App.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../scss/Skill.scss';
@@ -17,6 +16,7 @@ export default class SkillsLayout extends Component {
   }
 
   async componentDidMount() {
+    window.scrollTo(0, 0);
     const response = await fetch('data/skills.json');
     const res = response.json();
     res
