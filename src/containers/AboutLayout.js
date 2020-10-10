@@ -73,7 +73,7 @@ const AboutLayout = () => {
               <StartTyping />
 
               <p className="info">
-                A passionate a creative software developer.  I have experience in
+                A passionate creative software developer.  I have experience in
                 designing, development, and testing fully scalable products and systems.
               </p>
               <div className="social-icons">
