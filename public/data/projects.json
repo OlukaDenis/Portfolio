@@ -9,7 +9,56 @@
     "tags": [
       {
         "id": 110,
+<<<<<<< Updated upstream
         "name": "web"
+=======
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      }
+    ]
+  },
+
+  {
+    "id": 7,
+    "name": "Keen Foods",
+    "image": "images/keen-foods.png",
+    "liveLink": "https://keen-foods.herokuapp.com",
+    "github": "https://github.com/OlukaDenis/meal-catalogue",
+    "description": "A web app that provides detailed information on how to prepare you favorite recipes.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+
+      {
+        "id": 115,
+        "name": "React"
+      },
+
+      {
+        "id": 116,
+        "name": "Redux"
+>>>>>>> Stashed changes
       },
       {
         "id": 111,
