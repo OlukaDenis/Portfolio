@@ -36,7 +36,7 @@ export default function SideBar() {
       >
         <div id="colorlib-logo">
           <NavLink to="/">
-            <img src="images/logo.png" alt="Denny Logo" />
+            <img src="images/logo.svg" alt="Denny Logo" />
           </NavLink>
         </div>
         <nav id="colorlib-main-menu" role="navigation">
