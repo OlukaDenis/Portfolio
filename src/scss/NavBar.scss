@@ -92,7 +92,7 @@
             text-decoration: none;
             color: $primary;
             font-weight: 900;
-            transition: border-bottom .1s ease-in-out;
+            transition: border-bottom 0.1s ease-in-out;
           }
 
           &:active {
@@ -131,5 +131,5 @@
 
 .nav-link--active {
   border-bottom: 3px solid $primary;
-  transition: border-bottom .5s ease-in-out;
+  transition: border-bottom 0.5s ease-in-out;
 }
