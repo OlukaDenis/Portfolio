@@ -30,7 +30,7 @@ const fetchSkills = () => dispatch => {
 
 const fetchBlogs = () => dispatch => {
   dispatch(blogLoading());
-  fetch('data/projects.json')
+  fetch('data/blogs.json')
     .then(res => res.json())
     .then(result => {
       dispatch(blogSuccess(result));
@@ -41,7 +41,7 @@ const fetchBlogs = () => dispatch => {
     });
 };
 
-export default {
+export {
   fetchProjects,
   fetchSkills,
   fetchBlogs,

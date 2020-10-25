@@ -9,11 +9,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ReactGA from 'react-ga';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
-import fetchProjects from '../store/actions/index';
+import { fetchProjects } from '../store/actions/index';
 
 const ProjectsLayout = () => {
 
-  const projectState = useSelector(state => state.projects);
+  const projectState = useSelector(state => state.projectReducer);
   const { loading, projects, error  } = projectState;
 
   const dispatch = useDispatch();
@@ -21,6 +21,7 @@ const ProjectsLayout = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(fetchProjects())
+    console.log(projectState)
   }, [dispatch]);
 
   const projectAnalytics = link => {

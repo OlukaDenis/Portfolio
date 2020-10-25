@@ -28,6 +28,9 @@ const skillReducer = (state = initialState, action) => {
         ...state,
         error: action.message,
       };
+
+    default:
+      return state;
   }
 }
 
