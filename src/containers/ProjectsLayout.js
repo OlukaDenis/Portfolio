@@ -36,12 +36,9 @@ const ProjectsLayout = () => {
         <h1 className="heading-title">Projects</h1>
         <Container>
           <Row>
-            {(() => {
-              console.log(projectState)
-              if (loading) {
-                return <Loading />;
-              }
-              return error ? <p>Error</p>
+            {
+              loading ? <Loading />
+                : error ? <p>Error</p>
                 : projects.map(element => (
                   <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
                     <div className="blog-entry">
@@ -97,9 +94,8 @@ const ProjectsLayout = () => {
                       </div>
                     </div>
                   </Col>
-
-                ));
-            })()}
+                ))
+            }
 
           </Row>
         </Container>

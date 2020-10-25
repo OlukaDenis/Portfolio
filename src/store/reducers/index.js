@@ -1,8 +1,12 @@
 import { combineReducers } from 'redux';
 import projectReducer from './projectReducer';
+import skillReducer from './skillReducer';
+import blogReducer from './blogReducer';
 
 const reducer = combineReducers({
-  projects: projectReducer,
+  projectReducer,
+  skillReducer,
+  blogReducer,
 });
 
 export default reducer;

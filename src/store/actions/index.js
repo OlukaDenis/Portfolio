@@ -1,6 +1,6 @@
-// import { blogError, blogLoading, blogSuccess, requestBlogs } from './blogActions';
+import { blogError, blogLoading, blogSuccess, requestBlogs } from './blogActions';
 import { requestProjects, projectError, projectLoading, projectSuccess } from './projectActions';
-// import { requestSkills, skillError, skillLoading, skillSuccess } from './skillActions';
+import { requestSkills, skillError, skillLoading, skillSuccess } from './skillActions';
 
 const fetchProjects = () => dispatch => {
   dispatch(projectLoading());
@@ -15,5 +15,36 @@ const fetchProjects = () => dispatch => {
     });
 };
 
-export default fetchProjects;
+const fetchSkills = () => dispatch => {
+  dispatch(skillLoading());
+  fetch('data/skills.json')
+    .then(res => res.json())
+    .then(result => {
+      dispatch(skillSuccess(result));
+      dispatch(requestSkills(result));
+    })
+    .catch(err => {
+      dispatch(skillError(err));
+    });
+};
+
+const fetchBlogs = () => dispatch => {
+  dispatch(blogLoading());
+  fetch('data/projects.json')
+    .then(res => res.json())
+    .then(result => {
+      dispatch(blogSuccess(result));
+      dispatch(requestBlogs(result));
+    })
+    .catch(err => {
+      dispatch(blogError(err));
+    });
+};
+
+export default {
+  fetchProjects,
+  fetchSkills,
+  fetchBlogs,
+};
+
 
