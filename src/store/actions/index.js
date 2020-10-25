@@ -9,7 +9,6 @@ const fetchProjects = () => dispatch => {
     .then(result => {
       dispatch(projectSuccess(result));
       dispatch(requestProjects(result));
-      console.log(result);
     })
     .catch(err => {
       dispatch(projectError(err));

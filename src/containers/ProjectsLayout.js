@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import '../scss/Project.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -8,29 +9,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 import ReactGA from 'react-ga';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
+import fetchProjects from '../store/actions/index';
 
 const ProjectsLayout = () => {
-  const [data, setData] = useState([]);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true);
+
+  const projectState = useSelector(state => state.projects);
+  const { loading, projects, error  } = projectState;
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const fetchData = async () => {
-      const response = await fetch('data/projects.json');
-      response
-        .json()
-        .then(result =>	{
-          setData(result);
-          setLoading(false);
-        })
-        .catch(err => setError(err));
-    };
-    fetchData();
-  }, []);
+    dispatch(fetchProjects())
+  }, [dispatch]);
 
   const projectAnalytics = link => {
-    setError('');
     ReactGA.event({
       category: 'Projects',
       action: `Visited: ${link}`,
@@ -44,11 +37,12 @@ const ProjectsLayout = () => {
         <Container>
           <Row>
             {(() => {
+              console.log(projectState)
               if (loading) {
                 return <Loading />;
               }
               return error ? <p>Error</p>
-                : data.map(element => (
+                : projects.map(element => (
                   <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
                     <div className="blog-entry">
                       <div className="img img-2">
