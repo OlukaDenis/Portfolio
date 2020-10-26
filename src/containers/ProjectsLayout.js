@@ -20,8 +20,7 @@ const ProjectsLayout = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    dispatch(fetchProjects())
-    console.log(projectState)
+    dispatch(fetchProjects());
   }, [dispatch]);
 
   const projectAnalytics = link => {
@@ -40,7 +39,7 @@ const ProjectsLayout = () => {
             {
               loading ? <Loading />
                 : error ? <p>Error</p>
-                : projects.map(element => (
+                : projects && projects.map(element => (
                   <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
                     <div className="blog-entry">
                       <div className="img img-2">

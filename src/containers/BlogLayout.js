@@ -36,7 +36,7 @@ const BlogLayout = () => {
             {
               loading ? <Loading />
                 : error ? <p>Error</p>
-                : blogs.map(blog => (
+                : blogs && blogs.map(blog => (
                   <Col key={blog.id} md={10} lg={12} sm={10} style={{ margin: '0 auto' }}>
                     <div className="blog-item d-flex flex-column flex-lg-row">
                       <img className="blog-image flex-fill" src={blog.image} alt={blog.title} />
