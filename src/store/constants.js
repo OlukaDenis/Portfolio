@@ -16,6 +16,9 @@ const appConstants = {
   BLOG_SUCCESS: 'BLOG_SUCCESS',
   BLOG_ERROR: 'BLOG_ERROR',
 
+  DRAWER_OPEN: 'DRAWER_OPEN',
+  DRAWER_CLOSED: 'DRAWER_CLOSED',
+
 };
 
 export default appConstants;

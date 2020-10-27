@@ -20,22 +20,22 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.11rem;
-    background-color: ${({ open }) => open ? '#001a33' : '#ccc'};
+    background-color: ${({ open }) => (open ? '#001a33' : '#ccc')};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
     }
 
     &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-      opacity: ${({ open }) => open ? 0 : 1};
+      transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
+      opacity: ${({ open }) => (open ? 0 : 1)};
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
 `;
@@ -45,8 +45,8 @@ const Burger = () => {
 
   const handleClick = () => {
     setOpen(!open);
-  }
-  
+  };
+
   return (
     <>
       <StyledBurger open={open} onClick={handleClick}>
@@ -56,7 +56,7 @@ const Burger = () => {
       </StyledBurger>
       <RightNav open={open} handleClick={handleClick} />
     </>
-  )
-}
+  );
+};
 
-export default Burger
+export default Burger;

@@ -8,6 +8,10 @@ import {
   requestSkills, skillError, skillLoading, skillSuccess,
 } from './skillActions';
 
+import {
+  drawerClosed, drawerOpened,
+} from './drawerAction';
+
 const fetchProjects = () => dispatch => {
   dispatch(projectLoading());
   fetch('data/projects.json')
@@ -47,8 +51,18 @@ const fetchBlogs = () => dispatch => {
     });
 };
 
+const openDrawer = () => dispatch => {
+  dispatch(drawerOpened());
+};
+
+const closeDrawer = () => dispatch => {
+  dispatch(drawerClosed());
+};
+
 export {
   fetchProjects,
   fetchSkills,
   fetchBlogs,
+  openDrawer,
+  closeDrawer,
 };

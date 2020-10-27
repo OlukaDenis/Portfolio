@@ -54,18 +54,18 @@ const RightNav = ({ open, handleClick }) => {
   const registerResumeAnalytics = () => {
     ReactGA.event({
       category: 'Resume',
-      action: 'View my resume'
+      action: 'View my resume',
     });
-  }
+  };
 
   const registerHireAnalytics = () => {
     ReactGA.event({
       category: 'Hire Me',
-      action: 'Send a hire me email'
+      action: 'Send a hire me email',
     });
-  }
+  };
 
-    return (
+  return (
     <>
       <Ul open={open}>
         <li><NavLink onClick={handleClick} exact to="/" activeClassName="nav-link--active" className="nav-link"> About </NavLink></li>
@@ -97,6 +97,6 @@ const RightNav = ({ open, handleClick }) => {
       </Ul>
     </>
   );
-}
+};
 
 export default RightNav;
