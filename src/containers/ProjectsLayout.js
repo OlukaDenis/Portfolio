@@ -35,66 +35,64 @@ const ProjectsLayout = () => {
         <h1 className="heading-title">Projects</h1>
         <Container>
           <Row>
-            {
-              loading ? <Loading />
-                : error ? <p>Error</p>
-                  : projects && projects.map(element => (
-                    <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
-                      <div className="blog-entry">
-                        <div className="img img-2">
-                          <div className="detail-overlay">
-                            <ul>
-                              <li>
-                                <a
-                                  href={element.liveLink}
-                                  rel="noopener noreferrer"
-                                  target="_blank"
-                                  onClick={() => projectAnalytics(element.liveLink)}
-                                >
-                                  <FontAwesomeIcon icon={faEye} />
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={element.github}
-                                  rel="noopener noreferrer"
-                                  target="_blank"
-                                  onClick={() => projectAnalytics(element.github)}
-                                >
-                                  <FontAwesomeIcon icon={faCode} />
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                          <img src={element.image} alt={element.name} />
-                        </div>
-
-                        <div className="text text-2 pt-2 mt-3">
-                          <div className="category">
-                            {
-                            element.tags.map(tag => <span key={tag.id}>{tag.name}</span>)
-                          }
-                          </div>
-
-                          <h3 className="project-title">
+            { loading && <Loading /> }
+            { error ? <p>Error</p>
+              : projects && projects.map(element => (
+                <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
+                  <div className="blog-entry">
+                    <div className="img img-2">
+                      <div className="detail-overlay">
+                        <ul>
+                          <li>
                             <a
                               href={element.liveLink}
                               rel="noopener noreferrer"
                               target="_blank"
                               onClick={() => projectAnalytics(element.liveLink)}
                             >
-                              {element.name}
+                              <FontAwesomeIcon icon={faEye} />
                             </a>
-                          </h3>
-                          <p className="project-desc">
-                            {element.description}
-                            {' '}
-                          </p>
-                        </div>
+                          </li>
+                          <li>
+                            <a
+                              href={element.github}
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              onClick={() => projectAnalytics(element.github)}
+                            >
+                              <FontAwesomeIcon icon={faCode} />
+                            </a>
+                          </li>
+                        </ul>
                       </div>
-                    </Col>
-                  ))
-            }
+                      <img src={element.image} alt={element.name} />
+                    </div>
+
+                    <div className="text text-2 pt-2 mt-3">
+                      <div className="category">
+                        {
+                            element.tags.map(tag => <span key={tag.id}>{tag.name}</span>)
+                          }
+                      </div>
+
+                      <h3 className="project-title">
+                        <a
+                          href={element.liveLink}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          onClick={() => projectAnalytics(element.liveLink)}
+                        >
+                          {element.name}
+                        </a>
+                      </h3>
+                      <p className="project-desc">
+                        {element.description}
+                        {' '}
+                      </p>
+                    </div>
+                  </div>
+                </Col>
+              ))}
 
           </Row>
         </Container>

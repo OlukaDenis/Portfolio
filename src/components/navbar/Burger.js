@@ -1,6 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import RightNav from './RightNav';
+import {
+  openDrawer, closeDrawer,
+} from '../../store/actions/index';
 
 const StyledBurger = styled.div`
   width: 2rem;
@@ -41,11 +45,15 @@ const StyledBurger = styled.div`
 `;
 
 const Burger = () => {
-  const [open, setOpen] = useState(false);
+  const drawerReducer = useSelector(state => state.drawerReducer);
+  const { open } = drawerReducer;
+  const dispatch = useDispatch();
 
-  const handleClick = () => {
-    setOpen(!open);
-  };
+  useEffect(() => {
+    dispatch(closeDrawer());
+  }, [closeDrawer]);
+
+  const handleClick = () => (open ? dispatch(closeDrawer()) : dispatch(openDrawer()));
 
   return (
     <>
@@ -54,7 +62,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
-      <RightNav open={open} handleClick={handleClick} />
+      <RightNav />
     </>
   );
 };

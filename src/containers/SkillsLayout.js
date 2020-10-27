@@ -23,15 +23,14 @@ const SkillsLayout = () => {
         <h1 className="heading-title">Skills</h1>
         <Container>
           <Row>
-            {
-              loading ? <Loading />
-                : error ? <p>Error</p>
-                  : skills && skills.map(skill => (
-                    <Col key={skill.id} md={12} lg={12} sm={12}>
-                      <div className="skill-item">
-                        <h2>{skill.title}</h2>
-                        <div className="skill-list">
-                          {
+            { loading && <Loading /> }
+            { error ? <p>Error</p>
+              : skills && skills.map(skill => (
+                <Col key={skill.id} md={12} lg={12} sm={12}>
+                  <div className="skill-item">
+                    <h2>{skill.title}</h2>
+                    <div className="skill-list">
+                      {
                         skill.skills.map(ele => (
                           <div key={ele.id} className="text-center skill">
                             <img src={ele.image} alt={ele.name} />
@@ -39,11 +38,10 @@ const SkillsLayout = () => {
                           </div>
                         ))
                       }
-                        </div>
-                      </div>
-                    </Col>
-                  ))
-            }
+                    </div>
+                  </div>
+                </Col>
+              ))}
           </Row>
         </Container>
       </section>
