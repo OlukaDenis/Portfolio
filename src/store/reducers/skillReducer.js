@@ -1,9 +1,12 @@
-import { appConstants } from '../constants';
-import { initialState } from '../initialState';
-const { SKILL_ERROR, APP_LOADING, SKILL_REQUEST, SKILL_SUCCESS } = appConstants;
+import appConstants from '../constants';
+import initialState from '../initialState';
+
+const {
+  SKILL_ERROR, APP_LOADING, SKILL_REQUEST, SKILL_SUCCESS,
+} = appConstants;
 
 const skillReducer = (state = initialState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case SKILL_REQUEST:
       return {
         ...state,
@@ -16,7 +19,7 @@ const skillReducer = (state = initialState, action) => {
         ...state,
         loading: false,
       };
-    
+
     case APP_LOADING:
       return {
         ...state,
@@ -32,6 +35,6 @@ const skillReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default skillReducer;

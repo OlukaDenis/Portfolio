@@ -1,6 +1,12 @@
-import { blogError, blogLoading, blogSuccess, requestBlogs } from './blogActions';
-import { requestProjects, projectError, projectLoading, projectSuccess } from './projectActions';
-import { requestSkills, skillError, skillLoading, skillSuccess } from './skillActions';
+import {
+  blogError, blogLoading, blogSuccess, requestBlogs,
+} from './blogActions';
+import {
+  requestProjects, projectError, projectLoading, projectSuccess,
+} from './projectActions';
+import {
+  requestSkills, skillError, skillLoading, skillSuccess,
+} from './skillActions';
 
 const fetchProjects = () => dispatch => {
   dispatch(projectLoading());
@@ -46,5 +52,3 @@ export {
   fetchSkills,
   fetchBlogs,
 };
-
-

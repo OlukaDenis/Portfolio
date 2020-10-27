@@ -12,9 +12,8 @@ import Loading from '../components/loading';
 import { fetchProjects } from '../store/actions/index';
 
 const ProjectsLayout = () => {
-
   const projectState = useSelector(state => state.projectReducer);
-  const { loading, projects, error  } = projectState;
+  const { loading, projects, error } = projectState;
 
   const dispatch = useDispatch();
 
@@ -39,62 +38,62 @@ const ProjectsLayout = () => {
             {
               loading ? <Loading />
                 : error ? <p>Error</p>
-                : projects && projects.map(element => (
-                  <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
-                    <div className="blog-entry">
-                      <div className="img img-2">
-                        <div className="detail-overlay">
-                          <ul>
-                            <li>
-                              <a
-                                href={element.liveLink}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                onClick={() => projectAnalytics(element.liveLink)}
-                              >
-                                <FontAwesomeIcon icon={faEye} />
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href={element.github}
-                                rel="noopener noreferrer"
-                                target="_blank"
-                                onClick={() => projectAnalytics(element.github)}
-                              >
-                                <FontAwesomeIcon icon={faCode} />
-                              </a>
-                            </li>
-                          </ul>
+                  : projects && projects.map(element => (
+                    <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
+                      <div className="blog-entry">
+                        <div className="img img-2">
+                          <div className="detail-overlay">
+                            <ul>
+                              <li>
+                                <a
+                                  href={element.liveLink}
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                  onClick={() => projectAnalytics(element.liveLink)}
+                                >
+                                  <FontAwesomeIcon icon={faEye} />
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href={element.github}
+                                  rel="noopener noreferrer"
+                                  target="_blank"
+                                  onClick={() => projectAnalytics(element.github)}
+                                >
+                                  <FontAwesomeIcon icon={faCode} />
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <img src={element.image} alt={element.name} />
                         </div>
-                        <img src={element.image} alt={element.name} />
-                      </div>
 
-                      <div className="text text-2 pt-2 mt-3">
-                        <div className="category">
-                          {
+                        <div className="text text-2 pt-2 mt-3">
+                          <div className="category">
+                            {
                             element.tags.map(tag => <span key={tag.id}>{tag.name}</span>)
                           }
-                        </div>
+                          </div>
 
-                        <h3 className="project-title">
-                          <a
-                            href={element.liveLink}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            onClick={() => projectAnalytics(element.liveLink)}
-                          >
-                            {element.name}
-                          </a>
-                        </h3>
-                        <p className="project-desc">
-                          {element.description}
-                          {' '}
-                        </p>
+                          <h3 className="project-title">
+                            <a
+                              href={element.liveLink}
+                              rel="noopener noreferrer"
+                              target="_blank"
+                              onClick={() => projectAnalytics(element.liveLink)}
+                            >
+                              {element.name}
+                            </a>
+                          </h3>
+                          <p className="project-desc">
+                            {element.description}
+                            {' '}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </Col>
-                ))
+                    </Col>
+                  ))
             }
 
           </Row>

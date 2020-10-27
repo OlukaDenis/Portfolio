@@ -1,6 +1,9 @@
-import { appConstants } from '../constants';
-import { initialState } from '../initialState';
-const { PROJECT_ERROR, PROJECT_REQUEST, PROJECT_SUCCESS, APP_LOADING } = appConstants;
+import appConstants from '../constants';
+import initialState from '../initialState';
+
+const {
+  PROJECT_ERROR, PROJECT_REQUEST, PROJECT_SUCCESS, APP_LOADING,
+} = appConstants;
 
 const projectReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -32,7 +35,6 @@ const projectReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default projectReducer;
-

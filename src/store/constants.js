@@ -1,4 +1,4 @@
-export const appConstants = {
+const appConstants = {
   ALERT_ERROR: 'ALERT_ERROR',
   ALERT_SUCCESS: 'ALERT_SUCCESS',
 
@@ -16,4 +16,6 @@ export const appConstants = {
   BLOG_SUCCESS: 'BLOG_SUCCESS',
   BLOG_ERROR: 'BLOG_ERROR',
 
-}
+};
+
+export default appConstants;

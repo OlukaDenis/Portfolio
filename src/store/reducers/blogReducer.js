@@ -1,9 +1,12 @@
-import { appConstants } from '../constants';
-import { initialState } from '../initialState';
-const { APP_LOADING, BLOG_ERROR, BLOG_REQUEST, BLOG_SUCCESS } = appConstants;
+import appConstants from '../constants';
+import initialState from '../initialState';
+
+const {
+  APP_LOADING, BLOG_ERROR, BLOG_REQUEST, BLOG_SUCCESS,
+} = appConstants;
 
 const blogReducer = (state = initialState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case BLOG_REQUEST:
       return {
         ...state,
@@ -16,7 +19,7 @@ const blogReducer = (state = initialState, action) => {
         ...state,
         loading: false,
       };
-    
+
     case APP_LOADING:
       return {
         ...state,
@@ -32,6 +35,6 @@ const blogReducer = (state = initialState, action) => {
     default:
       return state;
   }
-}
+};
 
 export default blogReducer;
