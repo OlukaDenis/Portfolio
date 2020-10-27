@@ -33,9 +33,9 @@ const App = () => {
         <div id="colorlib-main">
           <Switch>
             <Route exact path="/" component={AboutLayout} />
-            <Route exact path="/projects" component={ProjectsLayout} />
-            <Route exact path="/skills" component={SkillsLayout} />
-            <Route exact path="/blog" component={BlogLayout} />
+            <Route path="/projects" component={ProjectsLayout} />
+            <Route path="/skills" component={SkillsLayout} />
+            <Route path="/blog" component={BlogLayout} />
           </Switch>
         </div>
       </div>

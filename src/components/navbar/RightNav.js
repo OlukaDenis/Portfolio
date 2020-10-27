@@ -1,8 +1,12 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import ReactGA from 'react-ga';
 import '../../scss/NavBar.scss';
 import { NavLink } from 'react-router-dom';
+import {
+  openDrawer, closeDrawer,
+} from '../../store/actions/index';
 
 const Ul = styled.ul`
   list-style: none;
@@ -48,31 +52,36 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open, handleClick }) => {
-  ReactGA.initialize('UA-161206924-2');
+const RightNav = () => {
+  const drawerReducer = useSelector(state => state.drawerReducer);
+  const { open } = drawerReducer;
+
+  const dispatch = useDispatch();
+
+  const handleClick = () => (open ? dispatch(closeDrawer()) : dispatch(openDrawer()));
 
   const registerResumeAnalytics = () => {
     ReactGA.event({
       category: 'Resume',
-      action: 'View my resume'
+      action: 'View my resume',
     });
-  }
+  };
 
   const registerHireAnalytics = () => {
     ReactGA.event({
       category: 'Hire Me',
-      action: 'Send a hire me email'
+      action: 'Send a hire me email',
     });
-  }
+  };
 
-    return (
+  return (
     <>
       <Ul open={open}>
         <li><NavLink onClick={handleClick} exact to="/" activeClassName="nav-link--active" className="nav-link"> About </NavLink></li>
         <li><NavLink onClick={handleClick} exact to="/projects" activeClassName="nav-link--active" className="nav-link"> Projects </NavLink></li>
         <li><NavLink onClick={handleClick} exact to="/skills" activeClassName="nav-link--active" className="nav-link"> Skills </NavLink></li>
         <li><NavLink onClick={handleClick} exact to="/blog" activeClassName="nav-link--active" className="nav-link"> Blog </NavLink></li>
-        <li onClick={handleClick}>
+        <li>
           <a
             href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing"
             className="btn btn-primary resume-btn"
@@ -83,7 +92,7 @@ const RightNav = ({ open, handleClick }) => {
             Resume
           </a>
         </li>
-        <li onClick={handleClick}>
+        <li>
           <a
             href="mailto:olukadeno@gmail.com"
             className="btn btn-primary resume-btn"
@@ -97,6 +106,6 @@ const RightNav = ({ open, handleClick }) => {
       </Ul>
     </>
   );
-}
+};
 
 export default RightNav;
