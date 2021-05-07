@@ -91,20 +91,6 @@ h5,
   position: relative;
 }
 
-.about-container {
-  padding: 1em 1.8em;
-
-  img {
-    @include border-radius(10%);
-
-    height: 10px;
-  }
-
-  @include media-breakpoint-down(sm) {
-    padding: 0;
-  }
-}
-
 //Headings
 .heading-title {
   color: white;

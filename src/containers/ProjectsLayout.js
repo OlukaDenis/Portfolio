@@ -65,7 +65,9 @@ const ProjectsLayout = () => {
                           </li>
                         </ul>
                       </div>
-                      <img src={element.image} alt={element.name} />
+                      <div className="project-pic">
+                        <img src={element.image} alt={element.name} />
+                      </div>
                     </div>
 
                     <div className="text text-2 pt-2 mt-3">

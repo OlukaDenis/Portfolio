@@ -110,7 +110,7 @@
     "id": 101,
     "name": "UgAid",
     "image": "images/ugaid.png",
-    "liveLink": null,
+    "liveLink": "",
     "github": "https://github.com/OlukaDenis/UgAid",
     "description": "Android mobile app that displays detailed information on movies and TV shows. App based on The Movie Database API.",
     "tags": [
