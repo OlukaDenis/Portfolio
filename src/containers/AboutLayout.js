@@ -67,15 +67,21 @@ const AboutLayout = () => {
         <Row>
           <Col>
             <div className="about-author">
-              <h4>Hello, my name is</h4>
-              <h1 className="name">Denis Oluka</h1>
+              <div>
+                <h4>
+                  Hello
+                  <span role="img" aria-label="hi">👋</span>
+                  , I&apos;m
+                </h4>
+                <h1 className="name">Denis Oluka</h1>
 
-              <StartTyping />
+                <StartTyping />
 
-              <p className="info">
-                A passionate creative software developer.  I have experience in
-                designing, development, and testing fully scalable products and systems.
-              </p>
+                <p className="info">
+                  A passionate creative software developer.  I have experience in
+                  designing, development, and testing fully scalable products and systems.
+                </p>
+              </div>
               <div className="social-icons">
                 <ul>
                   <li>
