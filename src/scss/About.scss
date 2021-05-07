@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   h1 {
     color: white;
     font-weight: 900;
@@ -116,5 +117,5 @@
 
   @include media-breakpoint-down(sm) {
     height: 500px;
-  }  
+  }
 }

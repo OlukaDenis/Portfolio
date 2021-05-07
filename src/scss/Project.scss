@@ -83,16 +83,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
       img {
         width: 90%;
         height: 90%;
-  
+
         @include media-breakpoint-down(sm) {
           height: 85%;
           margin: 20px 0;
         }
-    }
+      }
     }
 
     @include border-radius(3px);

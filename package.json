@@ -34,7 +34,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "firebase deploy --only hosting",
-    "lint": "npx eslint . --fix"
+    "lint": "npx eslint . --fix",
+    "stylint": "npx stylelint --fix '**/*.{css,scss}'"
   },
   "eslintConfig": {
     "extends": "react-app"
