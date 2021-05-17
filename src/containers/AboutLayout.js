@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col } from 'react-bootstrap';
-import ReactGA from 'react-ga';
 import Typist from 'react-typist';
+import { useAnalytics, analyticsEvent } from '../utils/googleAnalytics';
 import '../scss/About.scss';
 
 const AboutLayout = () => {
   const [typing, setTyping] = useState(false);
+  const location = useLocation();
+  useAnalytics(location.pathname);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,12 +57,6 @@ const AboutLayout = () => {
         <Typist.Delay ms={200} />
       </Typist>
     ));
-  const socialAnalytics = link => {
-    ReactGA.event({
-      category: 'Social',
-      action: `Visited: ${link}`,
-    });
-  };
 
   return (
     <section id="about" className="about-section text-center">
@@ -89,7 +86,7 @@ const AboutLayout = () => {
                       href="https://www.facebook.com/dennylucaz"
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => socialAnalytics('Facebook profile')}
+                      onClick={() => analyticsEvent('Facebook profile', 'Social')}
                     >
                       <FontAwesomeIcon icon={['fab', 'facebook']} />
                     </a>
@@ -99,7 +96,7 @@ const AboutLayout = () => {
                       href="https://twitter.com/dennycodev"
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => socialAnalytics('Twitter profile')}
+                      onClick={() => analyticsEvent('Twitter profile', 'Social')}
                     >
                       <FontAwesomeIcon icon={['fab', 'twitter']} />
                     </a>
@@ -109,7 +106,7 @@ const AboutLayout = () => {
                       href="https://angel.co/u/denis-oluka"
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => socialAnalytics('Angelist profile')}
+                      onClick={() => analyticsEvent('Angelist profile', 'Social')}
                     >
                       <FontAwesomeIcon icon={['fab', 'angellist']} />
                     </a>
@@ -119,7 +116,7 @@ const AboutLayout = () => {
                       href="https://linkedin.com/in/denis-oluka"
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => socialAnalytics('LinkedIn profile')}
+                      onClick={() => analyticsEvent('LinkedIn profile', 'Social')}
                     >
                       <FontAwesomeIcon icon={['fab', 'linkedin']} />
                     </a>
@@ -129,7 +126,7 @@ const AboutLayout = () => {
                       href="https://github.com/OlukaDenis"
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => socialAnalytics('GitHub profile')}
+                      onClick={() => analyticsEvent('Github profile', 'Social')}
                     >
                       <FontAwesomeIcon icon={['fab', 'github']} />
                     </a>
@@ -139,7 +136,7 @@ const AboutLayout = () => {
                       href="skype:deniz.lucaz"
                       target="_blank"
                       rel="noopener noreferrer"
-                      onClick={() => socialAnalytics('Skype profile')}
+                      onClick={() => analyticsEvent('Skype profile', 'Social')}
                     >
                       <FontAwesomeIcon icon={['fab', 'skype']} />
                     </a>

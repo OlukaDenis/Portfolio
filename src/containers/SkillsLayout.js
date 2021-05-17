@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import '../App.scss';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -6,11 +7,15 @@ import '../scss/Skill.scss';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
 import { fetchSkills } from '../store/actions/index';
+import { useAnalytics } from '../utils/googleAnalytics';
 
 const SkillsLayout = () => {
   const skillReducer = useSelector(state => state.skillReducer);
   const { loading, error, skills } = skillReducer;
   const dispatch = useDispatch();
+
+  const location = useLocation();
+  useAnalytics(location.pathname);
 
   useEffect(() => {
     window.scrollTo(0, 0);

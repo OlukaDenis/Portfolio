@@ -1,33 +1,27 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import '../scss/Project.scss';
+import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faCode, faEye,
-} from '@fortawesome/free-solid-svg-icons';
+import { faCode, faEye } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
-import ReactGA from 'react-ga';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
 import { fetchProjects } from '../store/actions/index';
+import { useAnalytics, analyticsEvent } from '../utils/googleAnalytics';
 
 const ProjectsLayout = () => {
   const projectState = useSelector(state => state.projectReducer);
   const { loading, projects, error } = projectState;
-
   const dispatch = useDispatch();
+
+  const location = useLocation();
+  useAnalytics(location.pathname);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(fetchProjects());
   }, [dispatch]);
-
-  const projectAnalytics = link => {
-    ReactGA.event({
-      category: 'Projects',
-      action: `Visited: ${link}`,
-    });
-  };
 
   return (
     <div id="projects">
@@ -48,7 +42,7 @@ const ProjectsLayout = () => {
                               href={element.liveLink}
                               rel="noopener noreferrer"
                               target="_blank"
-                              onClick={() => projectAnalytics(element.liveLink)}
+                              onClick={() => analyticsEvent(element.liveLink, 'Projects')}
                             >
                               <FontAwesomeIcon icon={faEye} />
                             </a>
@@ -58,7 +52,7 @@ const ProjectsLayout = () => {
                               href={element.github}
                               rel="noopener noreferrer"
                               target="_blank"
-                              onClick={() => projectAnalytics(element.github)}
+                              onClick={() => analyticsEvent(element.github, 'Projects')}
                             >
                               <FontAwesomeIcon icon={faCode} />
                             </a>
@@ -82,7 +76,7 @@ const ProjectsLayout = () => {
                           href={element.liveLink}
                           rel="noopener noreferrer"
                           target="_blank"
-                          onClick={() => projectAnalytics(element.liveLink)}
+                          onClick={() => analyticsEvent(element.liveLink, 'Projects')}
                         >
                           {element.name}
                         </a>

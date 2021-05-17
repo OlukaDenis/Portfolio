@@ -1,9 +1,9 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
-import ReactGA from 'react-ga';
 import '../../scss/NavBar.scss';
 import { NavLink } from 'react-router-dom';
+import { analyticsEvent } from '../../utils/googleAnalytics';
 import {
   openDrawer, closeDrawer,
 } from '../../store/actions/index';
@@ -60,20 +60,6 @@ const RightNav = () => {
 
   const handleClick = () => (open ? dispatch(closeDrawer()) : dispatch(openDrawer()));
 
-  const registerResumeAnalytics = () => {
-    ReactGA.event({
-      category: 'Resume',
-      action: 'View my resume',
-    });
-  };
-
-  const registerHireAnalytics = () => {
-    ReactGA.event({
-      category: 'Hire Me',
-      action: 'Send a hire me email',
-    });
-  };
-
   return (
     <>
       <Ul open={open}>
@@ -87,7 +73,7 @@ const RightNav = () => {
             className="btn btn-primary resume-btn"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => registerResumeAnalytics}
+            onClick={() => analyticsEvent('View my resume', 'Resume')}
           >
             Resume
           </a>
@@ -98,7 +84,7 @@ const RightNav = () => {
             className="btn btn-primary resume-btn"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => registerHireAnalytics}
+            onClick={() => analyticsEvent('Send a hire me email', 'Hire me')}
           >
             Hire Me
           </a>
