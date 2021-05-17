@@ -45,15 +45,15 @@
       padding-top: 10px;
 
       @include media-breakpoint-down(sm) {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
       }
     }
 
     .blog-meta {
       p {
         color: $grayish;
-        text-transform: uppercase;
         font-weight: lighter;
+        font-size: 0.8rem;
         padding-top: 20px;
 
         @include media-breakpoint-down(sm) {

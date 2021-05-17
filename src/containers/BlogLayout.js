@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
-import ReactGA from 'react-ga';
+import { useAnalytics, analyticsEvent } from '../utils/googleAnalytics';
 import '../scss/Blog.scss';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
@@ -14,17 +15,13 @@ const BlogLayout = () => {
   const { loading, error, blogs } = blogReducer;
   const dispatch = useDispatch();
 
+  const location = useLocation();
+  useAnalytics(location.pathname);
+
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(fetchBlogs());
   }, [dispatch]);
-
-  const blogAnalytics = link => {
-    ReactGA.event({
-      category: 'Blog',
-      action: `Visited: ${link}`,
-    });
-  };
 
   return (
     <div>
@@ -46,7 +43,7 @@ const BlogLayout = () => {
                                   href={blog.link}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  onClick={() => blogAnalytics(blog.link)}
+                                  onClick={() => analyticsEvent(blog.link, 'Blogs')}
                                 >
                                   {blog.title}
                                 </a>
@@ -59,7 +56,7 @@ const BlogLayout = () => {
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="btn btn-primary link-btn"
-                                  onClick={() => blogAnalytics(blog.link)}
+                                  onClick={() => analyticsEvent(blog.link, 'Blogs')}
                                 >
                                   <FontAwesomeIcon icon={faAngleRight} />
                                 </a>

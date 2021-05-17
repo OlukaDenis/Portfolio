@@ -13,12 +13,12 @@
   position: absolute;
   top: 40%;
   left: 45%;
-  width: 6em;
-  height: 6em;
+  width: 4em;
+  height: 4em;
   border: 0.4em solid $primary;
   border-left: 0.4em solid $whitish;
   border-radius: 50%;
-  animation: load8 1.1s infinite linear;
+  animation: load8 1.8s infinite linear;
 
   @include media-breakpoint-down(sm) {
     top: 60%;
