@@ -15,7 +15,7 @@ import SideBar from './components/SideBar';
 import initFontAwesome from './utils/initFontAwesome';
 
 const history = createBrowserHistory();
-const trackingId = 'UA-161206924-2';
+const trackingId = process.env.REACT_APP_ANALYTICS_ID;
 history.listen(location => {
   ReactGA.set({ page: location.pathname }); // Update the user's current page
   ReactGA.pageview(location.pathname); // Record a pageview for the given page
