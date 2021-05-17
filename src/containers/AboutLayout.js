@@ -96,7 +96,7 @@ const AboutLayout = () => {
                   </li>
                   <li>
                     <a
-                      href="https://twitter.com/dennylucaz"
+                      href="https://twitter.com/dennycodev"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => socialAnalytics('Twitter profile')}
