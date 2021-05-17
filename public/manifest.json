@@ -1,6 +1,6 @@
 {
   "short_name": "Denis Portfolio",
-  "name": "Create React App Sample",
+  "name": "Denis Oluka",
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,8 +18,11 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "display_override": ["window-control-overlay", "minimal-ui"],
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "scope": "/",
+  "theme_color": "#132238",
+  "background_color": "#132238",
+  "description": "Denis Oluka Portfolio. I'm a developer, mentor, and freelancer"
 }
