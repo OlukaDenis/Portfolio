@@ -13,7 +13,7 @@ import BlogLayout from './containers/BlogLayout';
 import SideBar from './components/SideBar';
 import initFontAwesome from './utils/initFontAwesome';
 
-const trackingId = 'UA-161206924-2';
+const trackingId = process.env.REACT_APP_ANALYTICS_ID;
 initFontAwesome();
 
 const App = () => {
