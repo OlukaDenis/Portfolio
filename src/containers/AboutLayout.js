@@ -70,7 +70,7 @@ const AboutLayout = () => {
                   <span role="img" aria-label="hi">👋</span>
                   , I&apos;m
                 </h4>
-                <h4>{process.env.REACT_APP_ANALYTICS_ID}</h4>
+
                 <h1 className="name">Denis Oluka</h1>
 
                 <StartTyping />
