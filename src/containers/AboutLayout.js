@@ -18,45 +18,39 @@ const AboutLayout = () => {
   const onDone = () => setTyping(true);
   const onDefaultTyping = () => setTyping(false);
 
-  const StartTyping = () => (typing
-    ? (
-      <Typist
-        className="title"
-        avgTypingDelay={60}
-        startDelay={0}
-        onTypingDone={onDefaultTyping}
-      >
-        <Typist.Delay ms={200} />
-        Freelancer
-        <Typist.Backspace count={10} delay={2000} />
-        <Typist.Delay ms={200} />
-      </Typist>
-    )
-
-    : (
-      <Typist
-        className="title"
-        avgTypingDelay={80}
-        startDelay={0}
-        onTypingDone={onDone}
-      >
-
-        <Typist.Delay ms={500} />
-        Full-stack developer
-        <Typist.Backspace count={20} delay={2000} />
-        <Typist.Delay ms={200} />
-
-        <Typist.Delay ms={200} />
-        Mentor
-        <Typist.Backspace count={6} delay={2000} />
-        <Typist.Delay ms={200} />
-
-        <Typist.Delay ms={200} />
-        Designer
-        <Typist.Backspace count={8} delay={2000} />
-        <Typist.Delay ms={200} />
-      </Typist>
-    ));
+  const StartTyping = () => (typing ? (
+    <Typist
+      className="title"
+      avgTypingDelay={60}
+      startDelay={0}
+      onTypingDone={onDefaultTyping}
+    >
+      <Typist.Delay ms={200} />
+      Freelancer
+      <Typist.Backspace count={10} delay={2000} />
+      <Typist.Delay ms={200} />
+    </Typist>
+  ) : (
+    <Typist
+      className="title"
+      avgTypingDelay={80}
+      startDelay={0}
+      onTypingDone={onDone}
+    >
+      <Typist.Delay ms={500} />
+      Full-stack developer
+      <Typist.Backspace count={20} delay={2000} />
+      <Typist.Delay ms={200} />
+      <Typist.Delay ms={200} />
+      Mentor
+      <Typist.Backspace count={6} delay={2000} />
+      <Typist.Delay ms={200} />
+      <Typist.Delay ms={200} />
+      Designer
+      <Typist.Backspace count={8} delay={2000} />
+      <Typist.Delay ms={200} />
+    </Typist>
+  ));
 
   return (
     <section id="about" className="about-section text-center">
@@ -67,7 +61,9 @@ const AboutLayout = () => {
               <div>
                 <h4>
                   Hello
-                  <span role="img" aria-label="hi">👋</span>
+                  <span role="img" aria-label="hi">
+                    👋
+                  </span>
                   , I&apos;m
                 </h4>
 
@@ -76,8 +72,9 @@ const AboutLayout = () => {
                 <StartTyping />
 
                 <p className="info">
-                  A passionate creative software developer.  I have experience in
-                  designing, development, and testing fully scalable products and systems.
+                  A passionate creative software developer. I have experience in
+                  designing, development, and testing fully scalable products
+                  and systems.
                 </p>
               </div>
               <div className="social-icons">
