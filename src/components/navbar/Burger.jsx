@@ -43,7 +43,7 @@ const StyledBurger = styled.div`
 `;
 
 const Burger = () => {
-  const drawerReducer = useSelector((state) => state.drawerReducer);
+  const drawerReducer = useSelector(state => state.drawerReducer);
   const { open } = drawerReducer;
   const dispatch = useDispatch();
 
@@ -51,8 +51,7 @@ const Burger = () => {
     dispatch(closeDrawer());
   }, [closeDrawer]);
 
-  const handleClick = () =>
-    open ? dispatch(closeDrawer()) : dispatch(openDrawer());
+  const handleClick = () => (open ? dispatch(closeDrawer()) : dispatch(openDrawer()));
 
   return (
     <>

@@ -2,7 +2,9 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jest": true
+    "jest": true,
+    "commonjs": true,
+    "es2021": true
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -11,15 +13,34 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "extends": ["airbnb", "plugin:react/recommended"],
-  "plugins": ["react"],
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
   "rules": {
-    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "no-tabs": 0,
-    "arrow-parens": ["error", "as-needed"],
-    "semi": [1, "always"]
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "semi": [
+      1,
+      "always"
+    ]
   },
   "ignorePatterns": [
     "dist/",
