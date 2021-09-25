@@ -18,7 +18,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "no-tabs": 0,
-    "arrow-parens": ["error", "as-needed"]
+    "arrow-parens": ["error", "as-needed"],
+    "semi": [1, "always"]
   },
   "ignorePatterns": [
     "dist/",
