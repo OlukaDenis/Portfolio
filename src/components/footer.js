@@ -1,12 +1,12 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope,
   faMapMarkerAlt,
   faPhone,
-} from '@fortawesome/free-solid-svg-icons'
-import { Container, Row, Col } from 'react-bootstrap'
-import '../scss/footer.scss'
+} from '@fortawesome/free-solid-svg-icons';
+import { Container, Row, Col } from 'react-bootstrap';
+import '../scss/footer.scss';
 
 const Footer = () => (
   <footer className="ftco-footer ftco-bg-dark ftco-section">
@@ -115,6 +115,6 @@ const Footer = () => (
       </Row>
     </Container>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
