@@ -2,9 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
 import RightNav from './RightNav';
-import {
-  openDrawer, closeDrawer,
-} from '../../store/actions/index';
+import { openDrawer, closeDrawer } from '../../store/actions/index';
 
 const StyledBurger = styled.div`
   width: 2rem;

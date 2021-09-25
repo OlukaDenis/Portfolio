@@ -108,7 +108,7 @@ const Footer = () => (
           </div>
 
           <p>
-            Copyright | Denis Oluka &copy;{' '}
+            Copyright | Denis Oluka &copy;
             <span>{new Date().getFullYear()}</span>
           </p>
         </Col>
