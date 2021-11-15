@@ -30,9 +30,18 @@
       {
         "id": 114,
         "name": "Coroutines"
-      }, {
+      },
+      {
         "id": 116,
         "name": "MVVM"
+      },
+      {
+        "id": 118,
+        "name": "Jetpack"
+      },
+      {
+        "id": 117,
+        "name": "Clean Architecture"
       }
     ]
   },
@@ -43,6 +52,226 @@
     "liveLink": "https://play.google.com/store/apps/details?id=com.tehecaapp",
     "github": null,
     "description": "Teheca app enables new parents to search, find and connect with health workers for in-home post-birth care services like reviews, checkups, and consultations.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      },
+      {
+        "id": 115,
+        "name": "Jetpack"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "MECG",
+    "image": "images/mecg.png",
+    "liveLink": "",
+    "github": null,
+    "description": "MECG mobile application for registering and managing beneficiaries in the MECG Pilot programme in Lao",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Private"
+      },
+      {
+        "id": 116,
+        "name": "Jetpack"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Rewot",
+    "image": "images/rewot.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.rewot.app",
+    "github": null,
+    "description": "Rewot Ciro Distributor is a customer-initiated, restocking, and ordering (CIRO) online platform that connects wholesalers and retailers to distributors of alcoholic drinks. It is an online dynamic, innovative, and accessible platform on Android devices. Rewot Ciro simplifies the ordering, delivery, and receipt of alcoholic and non-alcoholic beverages.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Firebase"
+      },
+      {
+        "id": 115,
+        "name": "Mpesa"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      },
+      {
+        "id": 117,
+        "name": "Realtime database"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Shuppa",
+    "image": "images/shuppa.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.shuppa",
+    "github": null,
+    "description": "Android mobile app that offers a wider range of quality products in Uganda as most of the grocery shoppers prefer to get their home ground products available in the grocery Stores.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      },
+      {
+        "id": 117,
+        "name": "Firestore"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Keen Foods",
+    "image": "images/keen_foods.png",
+    "liveLink": "https://keen-foods.herokuapp.com",
+    "github": "https://github.com/OlukaDenis/meal-catalogue",
+    "description": "A web app that provides detailed information on how to prepare you favorite recipes.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 115,
+        "name": "React"
+      },
+      {
+        "id": 116,
+        "name": "Redux"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Muvi Web Forum",
+    "image": "images/muvi-web.png",
+    "liveLink": "https://muvi-web-forum.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/Muvi-Web-Forum",
+    "description": "A web forum for the Muvi Android app with an intuitive UI design.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "UgAid",
+    "image": "images/ugaid.png",
+    "liveLink": "",
+    "github": "https://github.com/OlukaDenis/UgAid",
+    "description": "Mobile application that shows the realtime COVID-19 statistics. Self covid checker and locates covid treatment centers.",
     "tags": [
       {
         "id": 110,
@@ -104,114 +333,6 @@
       }
     ]
   },
-
-  {
-    "id": 7,
-    "name": "Keen Foods",
-    "image": "images/keen_foods.png",
-    "liveLink": "https://keen-foods.herokuapp.com",
-    "github": "https://github.com/OlukaDenis/meal-catalogue",
-    "description": "A web app that provides detailed information on how to prepare you favorite recipes.",
-    "tags": [
-      {
-        "id": 110,
-        "name": "Web"
-      },
-
-      {
-        "id": 115,
-        "name": "React"
-      },
-
-      {
-        "id": 116,
-        "name": "Redux"
-      },
-
-      {
-        "id": 111,
-        "name": "Javascript"
-      },
-      {
-        "id": 112,
-        "name": "NodeJs"
-      },
-      {
-        "id": 113,
-        "name": "Babel"
-      },
-      {
-        "id": 114,
-        "name": "Webpack"
-      }
-    ]
-  },
-  
-  {
-    "id": 2,
-    "name": "Muvi Web Forum",
-    "image": "images/muvi-web.png",
-    "liveLink": "https://muvi-web-forum.herokuapp.com/",
-    "github": "https://github.com/OlukaDenis/Muvi-Web-Forum",
-    "description": "A web forum for the Muvi Android app with an intuitive UI design.",
-    "tags": [
-      {
-        "id": 110,
-        "name": "web"
-      },
-      {
-        "id": 111,
-        "name": "Javascript"
-      },
-      {
-        "id": 112,
-        "name": "NodeJs"
-      },
-      {
-        "id": 113,
-        "name": "Babel"
-      },
-      {
-        "id": 114,
-        "name": "Webpack"
-      }
-    ]
-  },
-  {
-    "id": 101,
-    "name": "UgAid",
-    "image": "images/ugaid.png",
-    "liveLink": "",
-    "github": "https://github.com/OlukaDenis/UgAid",
-    "description": "Android mobile app that displays detailed information on movies and TV shows. App based on The Movie Database API.",
-    "tags": [
-      {
-        "id": 110,
-        "name": "Mobile"
-      },
-      {
-        "id": 111,
-        "name": "Android"
-      },
-      {
-        "id": 112,
-        "name": "Java"
-      },
-      {
-        "id": 113,
-        "name": "Retrofit"
-      },
-      {
-        "id": 115,
-        "name": "Room"
-      },
-      {
-        "id": 114,
-        "name": "Google Play"
-      }
-    ]
-  },
-  
   {
     "id": 3,
     "name": "Orgapp Tracker",
@@ -239,45 +360,6 @@
       {
         "id": 114,
         "name": "Webpack"
-      }
-    ]
-  },
-
-  {
-    "id": 104,
-    "name": "Shuppa",
-    "image": "images/shuppa.png",
-    "liveLink": "https://play.google.com/store/apps/details?id=com.shuppa",
-    "github": null,
-    "description": "Android mobile app that offers a wider range of quality products in Uganda as most of the grocery shoppers prefer to get their home ground products available in the grocery Stores.",
-    "tags": [
-      {
-        "id": 110,
-        "name": "Mobile"
-      },
-      {
-        "id": 111,
-        "name": "Android"
-      },
-      {
-        "id": 112,
-        "name": "Java"
-      },
-      {
-        "id": 113,
-        "name": "Retrofit"
-      },
-      {
-        "id": 115,
-        "name": "Room"
-      },
-      {
-        "id": 114,
-        "name": "Google Play"
-      },
-      {
-        "id": 117,
-        "name": "Firestore"
       }
     ]
   },
@@ -379,7 +461,6 @@
       }
     ]
   },
-
   {
     "id": 6,
     "name": "Restaurant Page",
@@ -410,7 +491,6 @@
       }
     ]
   },
-
   {
     "id": 8,
     "name": "Bookstore",
@@ -423,17 +503,14 @@
         "id": 110,
         "name": "Web"
       },
-
       {
         "id": 115,
         "name": "React"
       },
-
       {
         "id": 116,
         "name": "Redux"
       },
-
       {
         "id": 111,
         "name": "Javascript"
@@ -452,7 +529,6 @@
       }
     ]
   },
-
   {
     "id": 9,
     "name": "Weather App",
@@ -465,7 +541,6 @@
         "id": 110,
         "name": "Web"
       },
-
       {
         "id": 111,
         "name": "Javascript"
@@ -484,7 +559,6 @@
       }
     ]
   },
-
   {
     "id": 10,
     "name": "Tic Tac Toe",
@@ -497,7 +571,6 @@
         "id": 110,
         "name": "Web"
       },
-
       {
         "id": 111,
         "name": "Javascript"
@@ -516,7 +589,6 @@
       }
     ]
   },
-
   {
     "id": 11,
     "name": "Fitaita",
@@ -529,22 +601,18 @@
         "id": 110,
         "name": "Web"
       },
-
       {
         "id": 115,
         "name": "PhaserJs"
       },
-
       {
         "id": 117,
         "name": "WebGL"
       },
-
       {
         "id": 116,
         "name": "Canvas"
       },
-
       {
         "id": 111,
         "name": "Javascript"
@@ -563,5 +631,4 @@
       }
     ]
   }
-  
 ]
