@@ -42,14 +42,14 @@ const StyledBurger = styled.div`
   }
 `;
 
-const Burger = () => {
-  const drawerReducer = useSelector(state => state.drawerReducer);
+function Burger() {
+  const drawerReducer = useSelector((state) => state.drawerReducer);
   const { open } = drawerReducer;
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(closeDrawer());
-  }, [closeDrawer]);
+  }, [dispatch]);
 
   const handleClick = () => (open ? dispatch(closeDrawer()) : dispatch(openDrawer()));
 
@@ -63,6 +63,6 @@ const Burger = () => {
       <RightNav />
     </>
   );
-};
+}
 
 export default Burger;

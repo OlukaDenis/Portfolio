@@ -19,7 +19,10 @@
     }
   ],
   "start_url": "/",
-  "display_override": ["window-control-overlay", "minimal-ui"],
+  "display_override": [
+    "window-control-overlay",
+    "minimal-ui"
+  ],
   "display": "standalone",
   "scope": "/",
   "theme_color": "#132238",

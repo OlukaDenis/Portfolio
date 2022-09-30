@@ -12,50 +12,51 @@ import {
   drawerClosed, drawerOpened,
 } from './drawerAction';
 
-const fetchProjects = () => dispatch => {
+const fetchProjects = () => (dispatch) => {
   dispatch(projectLoading());
   fetch('data/projects.json')
-    .then(res => res.json())
-    .then(result => {
+    .then((res) => res.json())
+    .then((result) => {
       dispatch(projectSuccess(result));
       dispatch(requestProjects(result));
     })
-    .catch(err => {
+    .catch((err) => {
       dispatch(projectError(err));
     });
 };
 
-const fetchSkills = () => dispatch => {
+const fetchSkills = () => (dispatch) => {
   dispatch(skillLoading());
   fetch('data/skills.json')
-    .then(res => res.json())
-    .then(result => {
+    .then((res) => res.json())
+    .then((result) => {
       dispatch(skillSuccess(result));
       dispatch(requestSkills(result));
     })
-    .catch(err => {
+    .catch((err) => {
       dispatch(skillError(err));
     });
 };
 
-const fetchBlogs = () => dispatch => {
+const fetchBlogs = () => (dispatch) => {
+  console.log('FEtching blogs');
   dispatch(blogLoading());
   fetch('data/blogs.json')
-    .then(res => res.json())
-    .then(result => {
+    .then((res) => res.json())
+    .then((result) => {
       dispatch(blogSuccess(result));
       dispatch(requestBlogs(result));
     })
-    .catch(err => {
+    .catch((err) => {
       dispatch(blogError(err));
     });
 };
 
-const openDrawer = () => dispatch => {
+const openDrawer = () => (dispatch) => {
   dispatch(drawerOpened());
 };
 
-const closeDrawer = () => dispatch => {
+const closeDrawer = () => (dispatch) => {
   dispatch(drawerClosed());
 };
 

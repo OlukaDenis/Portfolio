@@ -9,8 +9,8 @@ import Loading from '../components/loading';
 import { fetchSkills } from '../store/actions/index';
 import { useAnalytics } from '../utils/googleAnalytics';
 
-const SkillsLayout = () => {
-  const skillReducer = useSelector(state => state.skillReducer);
+function SkillsLayout() {
+  const skillReducer = useSelector((state) => state.skillReducer);
   const { loading, error, skills } = skillReducer;
   const dispatch = useDispatch();
 
@@ -28,15 +28,15 @@ const SkillsLayout = () => {
         <h1 className="heading-title">Skills</h1>
         <Container>
           <Row>
-            { loading && <Loading /> }
-            { error ? <p>Error</p>
-              : skills && skills.map(skill => (
+            {loading && <Loading />}
+            {error ? <p>Error</p>
+              : skills && skills.map((skill) => (
                 <Col key={skill.id} md={12} lg={12} sm={12}>
                   <div className="skill-item">
                     <h2>{skill.title}</h2>
                     <div className="skill-list">
                       {
-                        skill.skills.map(ele => (
+                        skill.skills.map((ele) => (
                           <div key={ele.id} className="text-center skill">
                             <img src={ele.image} alt={ele.name} />
                             <p>{ele.name}</p>
@@ -53,6 +53,6 @@ const SkillsLayout = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default SkillsLayout;
