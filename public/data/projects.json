@@ -198,6 +198,98 @@
     ]
   },
   {
+    "id": 106,
+    "name": "Bevande",
+    "image": "images/bevande.png",
+    "liveLink": "",
+    "github": "",
+    "description": "App for delivering drinks at ease.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Kotlin"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Datastore"
+      },
+      {
+        "id": 114,
+        "name": "Coroutines"
+      },
+      {
+        "id": 116,
+        "name": "MVVM"
+      },
+      {
+        "id": 118,
+        "name": "Jetpack"
+      },
+      {
+        "id": 117,
+        "name": "Clean Architecture"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Rewwot Makao",
+    "image": "images/makao.png",
+    "liveLink": "",
+    "github": "",
+    "description": "Application for tenants and landlords to easily manage rent.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Kotlin"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Datastore"
+      },
+      {
+        "id": 114,
+        "name": "Coroutines"
+      },
+      {
+        "id": 116,
+        "name": "MVVM"
+      },
+      {
+        "id": 118,
+        "name": "Jetpack"
+      },
+      {
+        "id": 117,
+        "name": "Clean Architecture"
+      }
+    ]
+  },
+  {
     "id": 7,
     "name": "Keen Foods",
     "image": "images/keen_foods.png",
