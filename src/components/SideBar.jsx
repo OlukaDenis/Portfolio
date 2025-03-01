@@ -43,7 +43,11 @@ export default function SideBar() {
           <ul>
             <li><NavLink exact to="/" activeClassName="nav-link--active" className="nav-link"> About </NavLink></li>
             <li><NavLink exact to="/projects" activeClassName="nav-link--active" className="nav-link"> Projects </NavLink></li>
-            <li><NavLink exact to="/skills" activeClassName="nav-link--active" className="nav-link"> Skills </NavLink></li>
+            {/* <li>
+              <NavLink exact to="/skills" activeClassName="nav-link--active" className="nav-link">
+                Skills
+              </NavLink>
+            </li> */}
             <li><NavLink exact to="/blog" activeClassName="nav-link--active" className="nav-link"> Blog </NavLink></li>
           </ul>
         </nav>
@@ -56,7 +60,7 @@ export default function SideBar() {
           tabIndex="0"
         >
           <a
-            href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1gkeeAt9EburW4Lg5hFsrlz8cYgnSqcpyNeO2m1WfA7Y/edit?usp=sharing"
             className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"

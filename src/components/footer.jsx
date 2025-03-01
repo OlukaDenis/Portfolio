@@ -22,7 +22,11 @@ const Footer = () => (
                   {' '}
                   <FontAwesomeIcon icon={faMapMarkerAlt} />
                 </span>
-                <span> Center Plaza, Kitintale, Kampala-Uganda</span>
+                <span>
+                  {' '}
+                  {' '}
+                  Kampala-Uganda
+                </span>
               </p>
               <p>
                 {' '}
