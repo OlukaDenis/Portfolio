@@ -92,10 +92,6 @@
       {
         "id": 117,
         "name": "Clean Architecture"
-      },
-      {
-        "id": 118,
-        "name": "Dart"
       }
     ]
   },
@@ -396,6 +392,10 @@
       {
         "id": 117,
         "name": "Clean Architecture"
+      },
+      {
+        "id": 118,
+        "name": "Dart"
       }
     ]
   },
