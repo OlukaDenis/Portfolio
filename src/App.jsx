@@ -8,7 +8,7 @@ import {
 import ReactGA from 'react-ga';
 import AboutLayout from './containers/AboutLayout';
 import ProjectsLayout from './containers/ProjectsLayout';
-import SkillsLayout from './containers/SkillsLayout';
+// import SkillsLayout from './containers/SkillsLayout';
 import BlogLayout from './containers/BlogLayout';
 import SideBar from './components/SideBar';
 import initFontAwesome from './utils/initFontAwesome';
@@ -29,7 +29,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={AboutLayout} />
             <Route path="/projects" component={ProjectsLayout} />
-            <Route path="/skills" component={SkillsLayout} />
+            {/* <Route path="/skills" component={SkillsLayout} /> */}
             <Route path="/blog" component={BlogLayout} />
           </Switch>
         </div>

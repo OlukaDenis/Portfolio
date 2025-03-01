@@ -7,7 +7,6 @@
     "link": "https://hackernoon.com/5-most-popular-react-ui-component-libraries-5sx3t9c",
     "desc": "According to Stack Overflow Developers Survey 2020, ReactJS was voted as the most loved and wanted Javascript web framework.Due to its popularity, many UI libraries and kits have built custom React components ..."
   },
-
   {
     "id": 222,
     "title": "Git Commands That Every Developer Must Know",
@@ -16,7 +15,6 @@
     "link": "https://hackernoon.com/git-commands-that-every-developer-must-know-qs1n3yex",
     "desc": "Git, an open source distributed version control system has been helping developers over a decade now. It is a great tool for tracking source code changes during software development. However, there are a lot of git ..."
   },
-
   {
     "id": 232,
     "title": "Understanding Pseudo-Class Selectors",
@@ -24,14 +22,5 @@
     "date": "November 25th 2019",
     "link": "https://hackernoon.com/understanding-pseudo-class-selectors-mg443t89",
     "desc": "Front-end Developers don’t just need to understand how to write CSS, they also need to know how to write it effectively and efficiently. Sometimes we work on huge projects which need optimized CSS for speed meaning, you ..."
-  },
-
-  {
-    "id": 242,
-    "title": "Internet Of Things (IOT), The future Technology",
-    "image": "https://i2.wp.com/premar.tech/site/wp-content/uploads/2019/04/thomas-kolnowski-723280-unsplash.jpg?resize=720%2C451&ssl=1",
-    "date": "Apr 5, 2019 ",
-    "link": "https://premar.tech/site/internet-of-things-iot-the-future-technology/",
-    "desc": "Internet Of Things (commonly referred to as IoT) is the network of physical devices or “things” embedded with electronics, software, sensors, and connectivity—which enables these objects to connect and exchange data. These devices include ..."
   }
 ]

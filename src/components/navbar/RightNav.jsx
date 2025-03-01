@@ -65,11 +65,21 @@ const RightNav = () => {
       <Ul open={open}>
         <li><NavLink onClick={handleClick} exact to="/" activeClassName="nav-link--active" className="nav-link"> About </NavLink></li>
         <li><NavLink onClick={handleClick} exact to="/projects" activeClassName="nav-link--active" className="nav-link"> Projects </NavLink></li>
-        <li><NavLink onClick={handleClick} exact to="/skills" activeClassName="nav-link--active" className="nav-link"> Skills </NavLink></li>
+        {/* <li>
+          <NavLink
+            onClick={handleClick}
+            exact
+            to="/skills"
+            activeClassName="nav-link--active"
+            className="nav-link"
+          >
+            Skills
+          </NavLink>
+        </li> */}
         <li><NavLink onClick={handleClick} exact to="/blog" activeClassName="nav-link--active" className="nav-link"> Blog </NavLink></li>
         <li>
           <a
-            href="https://docs.google.com/document/d/1VFzAuigGH8sAw9jthdutik0dYWDmfR3QE3-GFLnym8k/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1gkeeAt9EburW4Lg5hFsrlz8cYgnSqcpyNeO2m1WfA7Y/edit?usp=sharing"
             className="btn btn-primary resume-btn"
             target="_blank"
             rel="noopener noreferrer"
