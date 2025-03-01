@@ -1,0 +1,726 @@
+[
+  {
+    "id": 1,
+    "name": "Gide Nuhs",
+    "image": "images/iseekme.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.iseekme.uat",
+    "github": "",
+    "description": "Gide Nuhs is a mentor-2-mentor platform where people from different life stages and backgrounds help each other with their personal and professional development.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Kotlin"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Datastore"
+      },
+      {
+        "id": 114,
+        "name": "Coroutines"
+      },
+      {
+        "id": 116,
+        "name": "MVVM"
+      },
+      {
+        "id": 118,
+        "name": "Jetpack"
+      },
+      {
+        "id": 117,
+        "name": "Clean Architecture"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "Teheca",
+    "image": "images/teheca.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.tehecaapp",
+    "github": null,
+    "description": "Teheca app enables new parents to search, find and connect with health workers for in-home post-birth care services like reviews, checkups, and consultations.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      },
+      {
+        "id": 115,
+        "name": "Jetpack"
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "name": "MECG",
+    "image": "images/mecg.png",
+    "liveLink": "",
+    "github": null,
+    "description": "MECG mobile application for registering and managing beneficiaries in the MECG Pilot programme in Lao",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Private"
+      },
+      {
+        "id": 116,
+        "name": "Jetpack"
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "name": "Rewot",
+    "image": "images/rewot.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.rewot.app",
+    "github": null,
+    "description": "Rewot Ciro Distributor is a customer-initiated, restocking, and ordering (CIRO) online platform that connects wholesalers and retailers to distributors of alcoholic drinks. It is an online dynamic, innovative, and accessible platform on Android devices. Rewot Ciro simplifies the ordering, delivery, and receipt of alcoholic and non-alcoholic beverages.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Firebase"
+      },
+      {
+        "id": 115,
+        "name": "Mpesa"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      },
+      {
+        "id": 117,
+        "name": "Realtime database"
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "name": "Shuppa",
+    "image": "images/shuppa.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.shuppa",
+    "github": null,
+    "description": "Android mobile app that offers a wider range of quality products in Uganda as most of the grocery shoppers prefer to get their home ground products available in the grocery Stores.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      },
+      {
+        "id": 117,
+        "name": "Firestore"
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Bevande",
+    "image": "images/bevande.png",
+    "liveLink": "",
+    "github": "",
+    "description": "App for delivering drinks at ease.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Kotlin"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Datastore"
+      },
+      {
+        "id": 114,
+        "name": "Coroutines"
+      },
+      {
+        "id": 116,
+        "name": "MVVM"
+      },
+      {
+        "id": 118,
+        "name": "Jetpack"
+      },
+      {
+        "id": 117,
+        "name": "Clean Architecture"
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Rewwot Makao",
+    "image": "images/makao.png",
+    "liveLink": "",
+    "github": "",
+    "description": "Application for tenants and landlords to easily manage rent.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Kotlin"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Datastore"
+      },
+      {
+        "id": 114,
+        "name": "Coroutines"
+      },
+      {
+        "id": 116,
+        "name": "MVVM"
+      },
+      {
+        "id": 118,
+        "name": "Jetpack"
+      },
+      {
+        "id": 117,
+        "name": "Clean Architecture"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Keen Foods",
+    "image": "images/keen_foods.png",
+    "liveLink": "https://keen-foods.herokuapp.com",
+    "github": "https://github.com/OlukaDenis/meal-catalogue",
+    "description": "A web app that provides detailed information on how to prepare you favorite recipes.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 115,
+        "name": "React"
+      },
+      {
+        "id": 116,
+        "name": "Redux"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Muvi Web Forum",
+    "image": "images/muvi-web.png",
+    "liveLink": "https://muvi-web-forum.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/Muvi-Web-Forum",
+    "description": "A web forum for the Muvi Android app with an intuitive UI design.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "UgAid",
+    "image": "images/ugaid.png",
+    "liveLink": "",
+    "github": "https://github.com/OlukaDenis/UgAid",
+    "description": "Mobile application that shows the realtime COVID-19 statistics. Self covid checker and locates covid treatment centers.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Muvi: The Muvi Guide",
+    "image": "images/muvi.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.premar.muvi",
+    "github": "https://github.com/OlukaDenis/Muvi",
+    "description": "Android mobile app that displays detailed information on movies and TV shows. App based on The Movie Database API.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Orgapp Tracker",
+    "image": "images/orgapp.png",
+    "liveLink": "https://orgapp-tracker.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/Project--Tracker",
+    "description": "A web app that allows users to track the time spent on projects and grouping them.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Todo App",
+    "image": "images/todo.png",
+    "liveLink": "https://todo-js-dj.netlify.app",
+    "github": "https://github.com/OlukaDenis/todo-list-javascript",
+    "description": "A web app for scheduling and completing your daily tasks.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "name": "Plateau Yorubs Statistical Survey",
+    "image": "images/plyss.png",
+    "liveLink": "https://play.google.com/store/apps/details?id=com.app.plyss",
+    "github": null,
+    "description": "Plateau Yoruba Statistical Survey app is designed to help analyze and and give insights of the total number of Yoruba people, household and their occupation in order to properly accessed them with grants, loan and even contracts when the need arises. ",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Mobile"
+      },
+      {
+        "id": 111,
+        "name": "Android"
+      },
+      {
+        "id": 112,
+        "name": "Java"
+      },
+      {
+        "id": 113,
+        "name": "Retrofit"
+      },
+      {
+        "id": 115,
+        "name": "Room"
+      },
+      {
+        "id": 114,
+        "name": "Google Play"
+      },
+      {
+        "id": 117,
+        "name": "Firestore"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Friendy",
+    "image": "images/friendy.png",
+    "liveLink": "https://friendy-social.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/Muvi-Web-Forum",
+    "description": "A web social platform that allows user to post their stories, send and receive friend requests, and comment on stories.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Restaurant Page",
+    "image": "images/restaurant.png",
+    "liveLink": "https://dennys.netlify.app",
+    "github": "https://github.com/OlukaDenis/restaurant-page",
+    "description": "A restaurant page which allows user to view the menu and contact for orders.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Bookstore",
+    "image": "images/bookstore.png",
+    "liveLink": "https://react-bookstore-tash-den.herokuapp.com/",
+    "github": "https://github.com/OlukaDenis/react-bookstore",
+    "description": "A web app that provides an interface for adding, delete edit and filtering books.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 115,
+        "name": "React"
+      },
+      {
+        "id": 116,
+        "name": "Redux"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Weather App",
+    "image": "images/weather-app.png",
+    "liveLink": "https://weather-cloud.netlify.app/",
+    "github": "https://github.com/OlukaDenis/weather-app",
+    "description": "A web app that allows you to search for weather forecast  of different cities around the globe.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Tic Tac Toe",
+    "image": "images/tictactoe.png",
+    "liveLink": "https://weather-cloud.netlify.app/",
+    "github": "https://raw.githack.com/OlukaDenis/TicTacToe-Javascript/development/index.html",
+    "description": "A 2D web multiplayer game.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Fitaita",
+    "image": "images/fitaita.png",
+    "liveLink": "https://fitaita.netlify.app/",
+    "github": "https://github.com/OlukaDenis/Fitaita",
+    "description": "Fitaita is a 2D RPG video game built with PhaserJs, an open source framework for Canvas and WebGL powered games.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 115,
+        "name": "PhaserJs"
+      },
+      {
+        "id": 117,
+        "name": "WebGL"
+      },
+      {
+        "id": 116,
+        "name": "Canvas"
+      },
+      {
+        "id": 111,
+        "name": "Javascript"
+      },
+      {
+        "id": 112,
+        "name": "NodeJs"
+      },
+      {
+        "id": 113,
+        "name": "Babel"
+      },
+      {
+        "id": 114,
+        "name": "Webpack"
+      }
+    ]
+  }
+]
