@@ -57,17 +57,17 @@ body {
   border-radius: 30px;
 }
 
-a {
-  transition: 0.3s all ease;
-  color: $primary;
+// a {
+//   transition: 0.3s all ease;
+//   color: $primary;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: $primary;
-    outline: none !important;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     text-decoration: none;
+//     color: $primary;
+//     outline: none !important;
+//   }
+// }
 
 p {
   font-family: $font-primary;
@@ -186,15 +186,26 @@ h5,
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0; }
-  to { width: 60%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 60%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+
   from,
-  to { border-color: transparent; }
-  60% { border-color: $primary; }
+  to {
+    border-color: transparent;
+  }
+
+  60% {
+    border-color: $primary;
+  }
 }
 
 .ftco-section {

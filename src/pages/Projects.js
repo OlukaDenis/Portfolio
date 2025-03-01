@@ -7,11 +7,11 @@ import { faCode, faEye } from '@fortawesome/free-solid-svg-icons';
 import { Container, Row, Col } from 'react-bootstrap';
 import Footer from '../components/footer';
 import Loading from '../components/loading';
-import { fetchProjects } from '../store/actions/index';
+import fetchProjects from '../store/actions/project.action';
 import { useAnalytics, analyticsEvent } from '../utils/googleAnalytics';
 
-const ProjectsLayout = () => {
-  const projectState = useSelector(state => state.projectReducer);
+export default function ProjectsLayout() {
+  const projectState = useSelector((state) => state.projectReducer);
   const { loading, projects, error } = projectState;
   const dispatch = useDispatch();
 
@@ -26,12 +26,12 @@ const ProjectsLayout = () => {
   return (
     <div id="projects">
       <section className="ftco-section">
-        <h1 className="heading-title">Projects</h1>
+        <h1 className="heading-title">My  Work</h1>
         <Container>
           <Row>
-            { loading && <Loading /> }
-            { error ? <p>Error</p>
-              : projects && projects.map(element => (
+            {loading && <Loading />}
+            {error ? <p>Error</p>
+              : projects && projects.map((element) => (
                 <Col key={element.id} md={6} lg={6} sm={10} className="project-col">
                   <div className="blog-entry">
                     <div className="img img-2">
@@ -39,20 +39,20 @@ const ProjectsLayout = () => {
                         <ul>
                           <li>
                             <a
-                              href={element.liveLink}
+                              href={element.liveUrl}
                               rel="noopener noreferrer"
                               target="_blank"
-                              onClick={() => analyticsEvent(element.liveLink, 'Projects')}
+                              onClick={() => analyticsEvent(element.liveUrl, 'Projects')}
                             >
                               <FontAwesomeIcon icon={faEye} />
                             </a>
                           </li>
                           <li>
                             <a
-                              href={element.github}
+                              href={element.codeUrl}
                               rel="noopener noreferrer"
                               target="_blank"
-                              onClick={() => analyticsEvent(element.github, 'Projects')}
+                              onClick={() => analyticsEvent(element.codeUrl, 'Projects')}
                             >
                               <FontAwesomeIcon icon={faCode} />
                             </a>
@@ -60,25 +60,25 @@ const ProjectsLayout = () => {
                         </ul>
                       </div>
                       <div className="project-pic">
-                        <img src={element.image} alt={element.name} />
+                        <img src={element.coverImage} alt={element.title} />
                       </div>
                     </div>
 
                     <div className="text text-2 pt-2 mt-3">
                       <div className="category">
                         {
-                            element.tags.map(tag => <span key={tag.id}>{tag.name}</span>)
-                          }
+                          element.tags.map((tag) => <span key={tag}>{tag}</span>)
+                        }
                       </div>
 
                       <h3 className="project-title">
                         <a
-                          href={element.liveLink}
+                          href={element.liveUrl}
                           rel="noopener noreferrer"
                           target="_blank"
-                          onClick={() => analyticsEvent(element.liveLink, 'Projects')}
+                          onClick={() => analyticsEvent(element.liveUrl, 'Projects')}
                         >
-                          {element.name}
+                          {element.title}
                         </a>
                       </h3>
                       <p className="project-desc">
@@ -96,6 +96,4 @@ const ProjectsLayout = () => {
       <Footer />
     </div>
   );
-};
-
-export default ProjectsLayout;
+}

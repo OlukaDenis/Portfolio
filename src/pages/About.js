@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -6,19 +7,8 @@ import Typist from 'react-typist';
 import { useAnalytics, analyticsEvent } from '../utils/googleAnalytics';
 import '../scss/About.scss';
 
-const AboutLayout = () => {
-  const [typing, setTyping] = useState(false);
-  const location = useLocation();
-  useAnalytics(location.pathname);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const onDone = () => setTyping(true);
-  const onDefaultTyping = () => setTyping(false);
-
-  const StartTyping = () => (typing ? (
+function StartTyping({ typing, onDone, onDefaultTyping }) {
+  return typing ? (
     <Typist
       className="title"
       avgTypingDelay={60}
@@ -27,8 +17,8 @@ const AboutLayout = () => {
     >
       <Typist.Delay ms={200} />
       Freelancer
-      <Typist.Backspace count={10} delay={2000} />
-      <Typist.Delay ms={200} />
+      <Typist.Backspace count={5} delay={20} />
+      <Typist.Delay ms={1000} />
     </Typist>
   ) : (
     <Typist
@@ -50,7 +40,20 @@ const AboutLayout = () => {
       <Typist.Backspace count={8} delay={2000} />
       <Typist.Delay ms={200} />
     </Typist>
-  ));
+  );
+}
+
+function AboutLayout() {
+  const [typing, setTyping] = useState(false);
+  const location = useLocation();
+  useAnalytics(location.pathname);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const onDone = () => setTyping(true);
+  const onDefaultTyping = () => setTyping(false);
 
   return (
     <section id="about" className="about-section text-center">
@@ -68,8 +71,7 @@ const AboutLayout = () => {
                 </h4>
 
                 <h1 className="name">Denis Oluka</h1>
-
-                <StartTyping />
+                <StartTyping typing={typing} onDone={onDone} onDefaultTyping={onDefaultTyping} />
 
                 <p className="info">
                   A passionate creative software developer. I have experience in
@@ -147,6 +149,12 @@ const AboutLayout = () => {
       </Container>
     </section>
   );
+}
+
+StartTyping.propTypes = {
+  typing: PropTypes.bool.isRequired,
+  onDone: PropTypes.func.isRequired,
+  onDefaultTyping: PropTypes.func.isRequired,
 };
 
 export default AboutLayout;

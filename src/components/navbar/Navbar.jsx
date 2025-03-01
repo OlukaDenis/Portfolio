@@ -19,13 +19,15 @@ const Nav = styled.nav`
   background-color: #011426;
 `;
 
-const Navbar = () => (
-  <Nav>
-    <Link to="/">
-      <Logo src="images/logo_light.png" alt="Denny Logo" />
-    </Link>
-    <Burger />
-  </Nav>
-);
+function Navbar() {
+  return (
+    <Nav>
+      <Link to="/">
+        <Logo src="images/logo_light.png" alt="Denny Logo" />
+      </Link>
+      <Burger />
+    </Nav>
+  );
+}
 
 export default Navbar;
