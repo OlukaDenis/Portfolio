@@ -1,13 +1,13 @@
 [
   {
-    "id": 1,
+    "id": 1001,
     "name": "Gide·Nuhs",
     "image": "images/gide_nuhs.png",
     "liveLink": "https://play.google.com/store/apps/details?id=com.iseekme.uat",
-    "github": "",
+    "github": null,
     "isPrivate": false,
     "wip": false,
-    "description": "Gide·Nuhs is the ultimate app for personal growth and social-emotional development. Our mission? To redefine talent development through Radical Trust and a global network of mentors.",
+    "description": "Gide·Nuhs is the ultimate app for personal growth and social-emotional development. Our mission is to redefine talent development through Radical Trust and a global network of mentors.",
     "tags": [
       {
         "id": 110,
@@ -48,14 +48,14 @@
     ]
   },
   {
-    "id": 2,
+    "id": 1002,
     "name": "Quickteller Paypoint",
     "image": "images/qt_app.png",
     "liveLink": "https://play.google.com/store/apps/details?id=com.interswitchug.quicktellerapp.ug",
-    "github": "",
+    "github": null,
     "isPrivate": false,
     "wip": false,
-    "description": "Quickteller is a good app for a side hustle. The updated version has a wide range of services, hence more commission. However my concerns are mainly two, the network disturbances have increased ever since it was updated and the response time from customer care support is long, plus communication about disturbances are not done in time",
+    "description": "Quickteller Paypoint agents are SMEs who provide financial services for their neighborhood, using Interswitch Financial Inclusion Services infrastructure. The services accessible at a Paypoint location include Mobile Money,Bill payments (UMEME, NWSC, DSTV,GOTV, STARTIMES, ZUKU,AZAM etc.), Local and International Airtime Top Ups and data recharge, among others.",
     "tags": [
       {
         "id": 110,
@@ -96,11 +96,11 @@
     ]
   },
   {
-    "id": 3,
+    "id": 1003,
     "name": "AfricaCDC Khub",
     "image": "images/khub_app.png",
     "liveLink": "https://play.google.com/store/apps/details?id=com.africacdc.khubmobile",
-    "github": "",
+    "github": null,
     "isPrivate": false,
     "wip": false,
     "description": "The Africa CDC Knowledge Management mobile app is designed to enhance the management of health interventions through dynamic knowledge sharing. With features tailored for health professionals and researchers, the app allows you to publish critical health content, engage in expert forums, and utilize AI-powered document comparison for in-depth analysis. Collaborate effectively by sharing key documents and resources across networks, ensuring that the latest data and expert insights inform interventions.",
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "id": 105,
+    "id": 1004,
     "name": "Rewot Ciro Credit",
     "image": "images/rewot.png",
     "liveLink": "https://play.google.com/store/apps/details?id=com.rewot.app",
@@ -184,7 +184,7 @@
     ]
   },
   {
-    "id": 99,
+    "id": 1005,
     "name": "UPMIS Mobile",
     "image": "images/upmis_app.png",
     "liveLink": "https://play.google.com/store/apps/details?id=com.geocodis.upmis2",
@@ -228,10 +228,10 @@
     ]
   },
   {
-    "id": 102,
+    "id": 1006,
     "name": "Agent Onboarding",
     "image": "images/agent_onboarding.png",
-    "liveLink": "",
+    "liveLink": null,
     "github": null,
     "isPrivate": true,
     "wip": false,
@@ -272,10 +272,46 @@
     ]
   },
   {
-    "id": 103,
+    "id": 1007,
+    "name": "Partner Onboarding",
+    "image": "images/partner_onboarding.png",
+    "liveLink": null,
+    "github": null,
+    "isPrivate": true,
+    "wip": false,
+    "description": "Quickteller Partner Onboarding an easy onboarding app to our easy to use innovative solutions",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 111,
+        "name": "React"
+      },
+      {
+        "id": 115,
+        "name": "Redux"
+      },
+      {
+        "id": 114,
+        "name": "Redux Toolkit"
+      },
+      {
+        "id": 116,
+        "name": "State Management"
+      },
+      {
+        "id": 117,
+        "name": "Javascript"
+      }
+    ]
+  },
+  {
+    "id": 1008,
     "name": "MECG",
     "image": "images/mecg.png",
-    "liveLink": "",
+    "liveLink": null,
     "github": null,
     "isPrivate": true,
     "wip": false,
@@ -316,7 +352,7 @@
     ]
   },
   {
-    "id": 117,
+    "id": 1009,
     "name": "Teheca",
     "image": "images/teheca.png",
     "liveLink": "https://play.google.com/store/apps/details?id=com.tehecaapp",
@@ -356,11 +392,11 @@
     ]
   },
   {
-    "id": 116,
+    "id": 1010,
     "name": "Field Master Pro",
     "image": "images/field_master_app.png",
-    "liveLink": "",
-    "github": "",
+    "liveLink": null,
+    "github": null,
     "isPrivate": false,
     "wip": true,
     "description": "Field Master Pro app is an agency tool management.",
@@ -400,11 +436,47 @@
     ]
   },
   {
-    "id": 106,
+    "id": 1011,
+    "name": "Vendor Management System",
+    "image": "images/vms.png",
+    "liveLink": null,
+    "github": null,
+    "isPrivate": true,
+    "wip": false,
+    "description": "Vendor Management System is a tool used to manage government markets.",
+    "tags": [
+      {
+        "id": 110,
+        "name": "Web"
+      },
+      {
+        "id": 111,
+        "name": "AngularJs"
+      },
+      {
+        "id": 115,
+        "name": "Router"
+      },
+      {
+        "id": 114,
+        "name": "RxJs"
+      },
+      {
+        "id": 116,
+        "name": "State Management"
+      },
+      {
+        "id": 117,
+        "name": "Typescript"
+      }
+    ]
+  },
+  {
+    "id": 1014,
     "name": "Bevande",
     "image": "images/bevande.png",
-    "liveLink": "",
-    "github": "",
+    "liveLink": null,
+    "github": null,
     "description": "App for delivering drinks at ease.",
     "isPrivate": false,
     "wip": true,
@@ -448,11 +520,11 @@
     ]
   },
   {
-    "id": 107,
+    "id": 1015,
     "name": "Rewot Makao",
     "image": "images/makao.png",
-    "liveLink": "",
-    "github": "",
+    "liveLink": null,
+    "github": null,
     "description": "Application for tenants and landlords to easily manage rent.",
     "isPrivate": false,
     "wip": true,
