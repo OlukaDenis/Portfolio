@@ -26,7 +26,7 @@ const AboutLayout = () => {
       onTypingDone={onDefaultTyping}
     >
       <Typist.Delay ms={200} />
-      Freelancer
+      Mobile Developer
       <Typist.Backspace count={10} delay={2000} />
       <Typist.Delay ms={200} />
     </Typist>
@@ -38,7 +38,7 @@ const AboutLayout = () => {
       onTypingDone={onDone}
     >
       <Typist.Delay ms={500} />
-      Full-stack developer
+      Frontend Developer
       <Typist.Backspace count={20} delay={2000} />
       <Typist.Delay ms={200} />
       <Typist.Delay ms={200} />
